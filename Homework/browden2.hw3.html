@@ -6,7 +6,7 @@
   <h1>Welcome!</h1>
   <body>
     <h2>Create Your Profile</h2>
-    <form>
+    <form action = "https://httpbin.org/get" method = "get">
     <!--Form name input here-->
     <!--First name input-->
       <label for="firstName">First Name:
@@ -20,11 +20,12 @@
     <p>
       <label for="avatar">Choose a profile photo(must be jpeg or png image):
         <input type="file" id="avatar" name="avatar"
-        accept="image/png, image/jpeg"/>
-      </label></p>
+        accept="image/png, image/jpeg"
+        required/></label></p>
     <!--Form Scrolling Textbox here-->
     <label for="pet-select">Choose your favorite pet:</label></br>
-    <select name="pets" id="pet-select" multiple>
+    <select name="pets" id="pet-select" multiple
+    required>
       <option value="">--Please choose an option--</option>
       <option value="dog">Dog</option>
       <option value="cat">Cat</option>
