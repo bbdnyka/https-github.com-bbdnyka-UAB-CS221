@@ -1,28 +1,51 @@
+/*
+  Overall font type, font color, and background color
+*/
 body {
   font-family: sans-serif;
   color: #221811;
-  background-color: rgb(200, 200, 200);
+  background-color: #ccccff;
 }
+/*
+  My name font edits
+*/
 header {
   color: white;
   text-align: center;
   font-size: 10em;
   text-transform: uppercase;
 }
+/*
+  navigation linka background color and design
+*/
 nav {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+  background-color: white;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
+/*
+  Nothing changed. Here for just symmetry.
+*/
 h1 {
   text-transform: uppercase;
   line-height: 200%;
 }
+/*
+  about me, skills, projects font edits
+*/
 h2 {
+  text-align: center;
   line-height: 200%;
   text-transform: uppercase;
   color: white;
 }
+/*
+  copyright and email
+*/
 footer {
   font-size: 0.6em;
   text-align: center;
@@ -30,31 +53,84 @@ footer {
   background-color: white;
   color: rgb(100, 100, 90);
 }
+/*
+  graphics for links
+*/
+a {
+  box-shadow: inset 0 0 0 0 #ccccff;
+  color: #ff66cc;
+  text-decoration: underline dotted #ff66cc;
+  transition: color 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+/*
+  graphics for links
+*/
+a:hover {
+  box-shadow: inset 400px 0 0 0 #ff66cc;
+  color: white;
+}
+/*
+  seperated about me paragraphs for appeal. First paragraph
+*/
 .first-p {
-  border: 5px dotted white;
+  width: 50%;
+  border: 10px dotted white;
   padding: 25px;
-  font-size: 15pt;
+  font-size: 1em;
+  text-align: center;
   text-indent: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
+/*
+  seperated about me paragraphs for appeal. Second paragraph
+*/
 .second-p {
-  border: 5px dotted white;
+  width: 50%;
+  border: 10px dotted white;
   padding: 25px;
-  font-size: 15pt;
+  font-size: 1em;
+  text-align: center;
   text-indent: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
+/*
+  Content wrap. pink background color
+*/
 #wrapper {
-  width: 80%;
+  width: 95%;
   background-color: #ffccff;
   margin-right: auto;
   margin-left: auto;
 }
+/*
+  webpage link for profile setup
+*/
 #profile-setup {
   text-align: center;
   font-size: 1em;
+  margin: 5%;
 }
+/*
+  list of project links
+*/
 #projects {
-  border: 5px dotted white;
+  width: 50%;
+  padding: 25px;
+  font-size: 1em;
+  border: 10px dotted white;
+  margin-right: auto;
+  margin-left: auto;
 }
+/*
+  skills list
+*/
 #skills {
-  border: 5px dotted white;
+  width: 50%;
+  padding: 25px;
+  font-size: 1em;
+  border: 10px dotted white;
+  margin-right: auto;
+  margin-left: auto;
 }
