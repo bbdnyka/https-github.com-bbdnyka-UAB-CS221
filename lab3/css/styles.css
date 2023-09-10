@@ -1,5 +1,5 @@
 /*
-  Overall font type, font color, and background color
+  Overall font type, font color, and background color(#ccccff)
 */
 body {
   font-family: sans-serif;
@@ -7,7 +7,7 @@ body {
   background-color: #ccccff;
 }
 /*
-  My name font edits
+  My name "De'Nyka Brown" 
 */
 header {
   color: white;
@@ -16,7 +16,7 @@ header {
   text-transform: uppercase;
 }
 /*
-  navigation linka background color and design
+  navigation links background color and design
 */
 nav {
   text-align: center;
@@ -28,14 +28,14 @@ nav {
   margin-left: auto;
 }
 /*
-  Nothing changed. Here for just symmetry.
+  Nothing changed. Here for symmetry.
 */
 h1 {
   text-transform: uppercase;
   line-height: 200%;
 }
 /*
-  about me, skills, projects font edits
+  about me, skills, projects headings
 */
 h2 {
   text-align: center;
@@ -96,7 +96,7 @@ a:hover {
   margin-left: auto;
 }
 /*
-  Content wrap. pink background color
+  Content wrap. pink background color(#ffccff)
 */
 #wrapper {
   width: 95%;
