@@ -26,6 +26,7 @@ nav {
   width: 50%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 15%;
 }
 /*
   Nothing changed. Here for symmetry.
@@ -73,20 +74,22 @@ a:hover {
   seperated about me paragraphs for appeal. First paragraph
 */
 .first-p {
-  width: 50%;
+  width: 40%;
   border: 10px dotted white;
   padding: 25px;
   font-size: 1em;
   text-align: center;
   text-indent: 20px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 5%;
+  float: left;
+  margin-top: 5%;
 }
 /*
   seperated about me paragraphs for appeal. Second paragraph
 */
 .second-p {
-  width: 50%;
+  width: 40%;
   border: 10px dotted white;
   padding: 25px;
   font-size: 1em;
@@ -94,7 +97,8 @@ a:hover {
   text-indent: 20px;
   margin-top: 50px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 10%;
+  float: left;
 }
 /*
   Content wrap. pink background color(#ffccff)
@@ -109,29 +113,47 @@ a:hover {
   webpage link for profile setup
 */
 #profile-setup {
+  width: 70%;
   text-align: center;
   font-size: 1em;
   margin: 5%;
+  border: 10px dotted white;
+  padding: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*
   list of project links
 */
 #projects {
-  width: 50%;
-  padding: 25px;
+  width: 70%;
+  padding: 50px;
   font-size: 1em;
   border: 10px dotted white;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 15%;
 }
 /*
   skills list
 */
 #skills {
-  width: 50%;
-  padding: 25px;
+  width: 70%;
+  padding: 50px;
   font-size: 1em;
   border: 10px dotted white;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 15%;
+}
+/*
+  picture of me
+*/
+#standing {
+  display: inline-block;
+  border: 10px dotted white;
+  padding: 25px;
+  margin-right: auto;
+  margin-left: 5%;
+  margin-bottom: 15%;
 }
