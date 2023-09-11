@@ -20,7 +20,7 @@ header {
   text-align: center;
 }
 /*
-  Name of business and typography
+  Name of business 
 */
 h1 {
   line-height: 200%;
@@ -28,7 +28,7 @@ h1 {
   font-size: 40pt;
 }
 /*
-  Subheadings color
+  Subheadings
 */
 h2 {
   color: #8c3826;
@@ -50,7 +50,7 @@ footer {
   text-align: center;
 }
 /*
-  Content wrap and second background color
+  Content wrap
 */
 #wrapper {
   width: 80%;
