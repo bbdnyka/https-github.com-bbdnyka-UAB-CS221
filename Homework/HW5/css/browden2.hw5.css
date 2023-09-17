@@ -1,29 +1,34 @@
-/*
-* wildcard element* - setting default values of all elements for padding, margin, boxing-size
-*/
+/*wildcard element* - setting default values of all elements for padding, margin, boxing-size*/
 *{
   padding:0px;
   margin:0px;
   box-sizing: border-box;
-  background-color: aqua;
+}
+/* color variables*/
+:root{
+  --clr-pink:#ffccff;
+  --clr-lavender:#ccccff;
+  --clr-peach:#ffcccc;
 }
 header{
-  top: opx;
+  top: 0px;
   position: sticky;
   border-bottom: 5px;
-  background-color: yellow;
+  background-color: var(--clr-pink);
 }
 main{
+  
   width: 80%;
-  align-items: center;
-  background-color: #ccccff;
+  justify-content: center;
+  background-color:var(--clr-lavender);
 }
 p{
   padding: 1em;
+
 }
 footer{
   width: 100%;
   bottom: 0px;
   position: fixed;
-  background-color: #ffccff;
+  background-color: var(--clr-peach);
 }
