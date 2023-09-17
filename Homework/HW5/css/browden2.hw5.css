@@ -1,0 +1,29 @@
+/*
+* wildcard element* - setting default values of all elements for padding, margin, boxing-size
+*/
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+header{
+  top: opx;
+  position: sticky;
+  border-bottom: 5px;
+  background-color: yellow;
+}
+main{
+  width: 80%;
+  align-items: center;
+  background-color: #ccccff;
+}
+p{
+  padding: 1em;
+}
+footer{
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  background-color: #ffccff;
+}
