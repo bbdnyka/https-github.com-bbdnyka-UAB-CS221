@@ -13,12 +13,12 @@
 header{
   top: 0px;
   position: sticky;
-  border-bottom: 5px;
+  border-bottom:5px var(--clr-peach) solid;
   background-color: var(--clr-pink);
 }
 main{
   width: 80%;
-  margin-right: auto;
+  margin-right: auto;/*For centering element*/
   margin-left: auto;
   background-color:var(--clr-lavender);
 }
@@ -28,7 +28,7 @@ p{
 }
 footer{
   width: 100%;
-  bottom: 0px;
+  bottom: 0px;/*Moves element to bottom*/
   position: fixed;
   background-color: var(--clr-peach);
 }
