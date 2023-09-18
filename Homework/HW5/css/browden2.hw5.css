@@ -17,9 +17,9 @@ header{
   background-color: var(--clr-pink);
 }
 main{
-  
   width: 80%;
-  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
   background-color:var(--clr-lavender);
 }
 p{
