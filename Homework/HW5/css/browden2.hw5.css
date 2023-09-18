@@ -11,9 +11,9 @@
   --clr-peach:#ffcccc;
 }
 header{
-  top: 0px;
+  top: 0px;/*puts elements at top*/
   position: sticky;
-  border-bottom:5px var(--clr-peach) solid;
+  border-bottom:5px var(--clr-peach) solid;/*border*/
   background-color: var(--clr-pink);
 }
 main{
