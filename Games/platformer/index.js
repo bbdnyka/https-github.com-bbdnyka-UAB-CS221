@@ -60,7 +60,7 @@ const player2 = new Player({
 x:300,
 y:0,
 })
-//key obj
+//key obj(for key pressing events)
 const keys = {
   d: {
     pressed: false,
@@ -89,26 +89,28 @@ function animate(){
 
     else if(keys.a.pressed) player.velocity.x =-3
 }
-//initiates movement
+//initiates movement animation
 animate()
 
-//player movement
-//movement based on arrow keys
+//player movement(set to true to move when keys pressed)
 window.addEventListener("keydown", (event) => {
   //logs when a key is used on console
   console.log(event)
   switch(event.key){
+
     //right movement
     case "d":
     keys.d.pressed = true
     //log for right movement
     console.log("move right")
     break
+
     //left movement
     case "a":
     keys.a.pressed = true
     console.log("move left")
     break
+
     //up movement or jump
     case "w":
     player.velocity.y = -10
@@ -116,15 +118,18 @@ window.addEventListener("keydown", (event) => {
     break
   }
 })
-//for stopping movement
+//for stopping movement(Set to false so movement stops)
 window.addEventListener("keyup", (event) => {
   //logs when a key is used on console
   console.log(event)
   switch(event.key){
+
     //right movement
     case "d":
     keys.d.pressed = false
     break
+
+    //left movement. 
     case "a":
     keys.a.pressed = false
     break
