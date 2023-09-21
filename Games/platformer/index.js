@@ -35,10 +35,16 @@ class Player{
     this.draw()
     //velocity ref for movement spd
     this.position.y += this.velocity.y
-    //if statement for stopping movement
+    this.position.x += this.velocity.x
+
+    //if statements for stopping movement
     if(this.position.y + this.height + this.velocity.y < canvas.height) 
     this.velocity.y += gravity
     else this.velocity.y = 0
+
+    //if(this.position.x + this.width + this.velocity.x < canvas.width) 
+    //this.velocity.x += gravity
+    //else this.velocity.x = 0
     
    }
 
@@ -54,6 +60,15 @@ const player2 = new Player({
 x:300,
 y:0,
 })
+//key obj
+const keys = {
+  d: {
+    pressed: false,
+  },
+  a: {
+    pressed: false,
+  },
+}
 //Movement(gravity)
 
 function animate(){
@@ -67,6 +82,52 @@ function animate(){
   //player animation
   player.update()
   player2.update()
+
+  //if/else for stopping and moving player (speed adjustment here)
+  player.velocity.x=0
+  if(keys.d.pressed) player.velocity.x=3
+
+    else if(keys.a.pressed) player.velocity.x =-3
 }
 //initiates movement
 animate()
+
+//player movement
+//movement based on arrow keys
+window.addEventListener("keydown", (event) => {
+  //logs when a key is used on console
+  console.log(event)
+  switch(event.key){
+    //right movement
+    case "d":
+    keys.d.pressed = true
+    //log for right movement
+    console.log("move right")
+    break
+    //left movement
+    case "a":
+    keys.a.pressed = true
+    console.log("move left")
+    break
+    //up movement or jump
+    case "w":
+    player.velocity.y = -10
+    console.log("jump/up")
+    break
+  }
+})
+//for stopping movement
+window.addEventListener("keyup", (event) => {
+  //logs when a key is used on console
+  console.log(event)
+  switch(event.key){
+    //right movement
+    case "d":
+    keys.d.pressed = false
+    break
+    case "a":
+    keys.a.pressed = false
+    break
+    
+  }
+})
