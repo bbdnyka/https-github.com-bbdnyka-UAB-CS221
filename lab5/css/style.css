@@ -26,6 +26,10 @@ footer{
 }
 /*id details*/
 #skills{
+  width: 50%;
+  border: 5px solid white;
+  padding: 20px;
+  margin: 20px;
   color:white;
   display:flex;
   
