@@ -31,12 +31,21 @@ header{
   color: white;
 
 }
+nav{
+  width: 80%;
+  border: 5px solid white;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
 footer{
   width: 80%;
   border: 5px solid white;
   padding: 20px;
   margin: 20px;
   color: white;
+  display: flex;
+  justify-content: space-between;
 
 }
 h1,h2,h3{
@@ -72,4 +81,11 @@ h1,h2,h3{
   color:white;
   display:flex;
   justify-content: space-around;
+}
+/* link details*/
+a{
+  color: white;
+}
+a:hover{
+  
 }
