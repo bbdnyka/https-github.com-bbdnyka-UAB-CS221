@@ -2,7 +2,8 @@
 //objects
 const canvas = document.querySelector("canvas")
 const c = canvas.getContext("2d")
-const gravity = 0.5
+//speed of falling animation
+const gravity = 5
 
 console.log(c)
 //gamescreen
@@ -42,7 +43,13 @@ class Player{
     this.velocity.y += gravity
     else this.velocity.y = 0
 
+    //if statements for detecting wall
     //if(this.position.x + this.width + this.velocity.x < canvas.width) 
+    //this.velocity.y += gravity
+    //else this.velocity.x = 0
+
+    //if statement for jump limit
+    //if(this.position.y + this.height + this.velocity.y < keys.w.pressed) 
     //this.velocity.x += gravity
     //else this.velocity.x = 0
     
@@ -85,9 +92,9 @@ function animate(){
 
   //if/else for stopping and moving player (speed adjustment here)
   player.velocity.x=0
-  if(keys.d.pressed) player.velocity.x=3
+  if(keys.d.pressed) player.velocity.x=10
 
-    else if(keys.a.pressed) player.velocity.x =-3
+    else if(keys.a.pressed) player.velocity.x =-10
 }
 //initiates movement animation
 animate()
@@ -113,7 +120,8 @@ window.addEventListener("keydown", (event) => {
 
     //up movement or jump
     case "w":
-    player.velocity.y = -10
+    //height of jump
+    player.velocity.y = -50
     console.log("jump/up")
     break
   }
