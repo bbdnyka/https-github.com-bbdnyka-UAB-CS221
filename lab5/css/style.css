@@ -1,0 +1,27 @@
+/*wildcard element* - setting default values of all elements for padding, margin, boxing-size*/
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+/* color variables*/
+:root{
+  --clr-pink:#ffccff;
+  --clr-lavender:#ccccff;
+  --clr-peach:#ffcccc;
+}
+body{
+  /*main body font color*/
+  color: pink;
+  /*main background color*/
+  background-color: black;
+
+}
+header{
+  /*stylize*/
+
+}
+footer{
+
+}
+/*id details*/
