@@ -15,16 +15,47 @@ body{
   color: pink;
   /*main background color*/
   background-color: black;
+  width: 80%;
+  border: 5px solid white;
+  padding: 20px;
+  margin: 20px;
+  color: white;
 
 }
 header{
   /*stylize*/
+  width: 80%;
+  border: 5px solid white;
+  padding: 20px;
+  margin: 20px;
+  color: white;
 
 }
 footer{
+  width: 80%;
+  border: 5px solid white;
+  padding: 20px;
+  margin: 20px;
+  color: white;
 
 }
+h1,h2,h3{
+  width: 80%;
+  border: 5px solid white;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
 /*id details*/
+/*about section*/
+#about{
+  width: 80%;
+  border: 5px solid white;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
+/*extras section*/
 #hobbies{
   width: 80%;
   border: 5px solid white;
@@ -32,6 +63,7 @@ footer{
   margin: 20px;
   color: white;
 }
+/*skills section*/
 #skills{
   width: 80%;
   border: 5px solid white;
