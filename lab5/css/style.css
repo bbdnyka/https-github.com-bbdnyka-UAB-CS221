@@ -73,7 +73,9 @@ p {
   margin: 100px;
 }
 /*id details*/
-.container-header{
+
+/*for the nav bar*/
+.main-header{
   position: sticky;
   top: 0;
 }
