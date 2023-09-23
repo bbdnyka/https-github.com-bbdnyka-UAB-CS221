@@ -102,6 +102,14 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+/*profile setup*/
+#profileForm{
+  margin: 100px;
+}
+/*contact form*/
+#contact{
+  margin: 100px;
+}
 /*
   Content wrap. pink background color(#ffccff)
 */
