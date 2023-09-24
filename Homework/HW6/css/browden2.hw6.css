@@ -9,7 +9,7 @@ body{
 .flex-container{
   width: 100vw;
   height: 100vh;
-  display: flex; /* sets self as flex container */
+  display: flex; /* for centering content */
   justify-content: center; /* center horizontally */
   align-items: center; /* center vertically */
 }
@@ -24,7 +24,7 @@ body{
 .grid-item{
   width: 50px;
   height: 50px;
-  display: flex; /* tiny flexbox to center text */
+  display: flex; /* flexbox to center text */
   justify-content: center;
   align-items: center;
   border-radius: 10px;
