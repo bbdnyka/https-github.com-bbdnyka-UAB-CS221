@@ -28,7 +28,7 @@ body{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  color: var(--clr-light);
+  color: green;
   text-shadow: 1px 1px 1px #6b6b6b;
   font-weight: 700;
   font-size: 2rem;
