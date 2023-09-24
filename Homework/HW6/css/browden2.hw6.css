@@ -41,6 +41,8 @@ body{
 }
 .item-2{
   background-color: white;
+  grid-row: span 2;
+  height: auto;
 }
 .item-3{
   background-color: yellow;
@@ -56,6 +58,8 @@ body{
 }
 .item-7{
   background-color: yellow;
+  grid-column: span 3;
+  width: auto;
 }
 .item-8{
   background-color: white;
