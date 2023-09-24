@@ -40,8 +40,11 @@ section {
   font-weight: 700;
   font-size: 2rem;
 }
+/*for spanning grid*/
 .item-1{
   background-color: pink;
+  grid-column: span 3;
+  width: auto;
 }
 .item-2{
   background-color: pink;
