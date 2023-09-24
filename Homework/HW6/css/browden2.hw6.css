@@ -16,6 +16,9 @@ section {
   width: 100vw;
   height: 100vh;
   background-color: whitesmoke;
+  display: flex; /* sets self as flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
 }
 /* flex item */
 .grid-container {
