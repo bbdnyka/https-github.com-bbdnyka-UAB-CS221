@@ -6,16 +6,9 @@
 body{
   background-color: pink;
 }
-section {
-  height: 100vh; /* set section height to full viewscreen */
-  display: flex; /* sets self as flex container */
-  justify-content: center; /* center horizontally */
-  align-items: center; /* center vertically */
-}
 .flex-container{
   width: 100vw;
   height: 100vh;
-  background-color: whitesmoke;
   display: flex; /* sets self as flex container */
   justify-content: center; /* center horizontally */
   align-items: center; /* center vertically */
@@ -23,14 +16,14 @@ section {
 /* flex item */
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(3, 150px);
-  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 50px);
   gap: 0.5em;
 }
 /*grid item*/
 .grid-item{
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
   display: flex; /* tiny flexbox to center text */
   justify-content: center;
   align-items: center;
@@ -42,49 +35,49 @@ section {
 }
 /*for spanning grid*/
 .item-1{
-  background-color: pink;
+  background-color: white;
   grid-column: span 3;
   width: auto;
 }
 .item-2{
-  background-color: pink;
+  background-color: white;
 }
 .item-3{
-  background-color: pink;
+  background-color: yellow;
 }
 .item-4{
-  background-color: pink;
+  background-color: white;
 }
 .item-5{
-  background-color: pink;
+  background-color: yellow;
 }
 .item-6{
-  background-color: pink;
+  background-color: white;
 }
 .item-7{
-  background-color: pink;
+  background-color: yellow;
 }
 .item-8{
-  background-color: pink;
+  background-color: white;
 }
 .item-9{
-  background-color: pink;
+  background-color: yellow;
 }
 .item-10{
-  background-color: pink;
+  background-color: white;
 }
 .item-11{
-  background-color: pink;
+  background-color: yellow;
 }
 .item-12{
-  background-color: pink;
+  background-color: white;
 }
 .item-13{
-  background-color: pink;
+  background-color: yellow;
 }
 .item-14{
-  background-color: pink;
+  background-color: white;
 }
 .item-15{
-  background-color: pink;
+  background-color: yellow;
 }
