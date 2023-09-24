@@ -6,3 +6,34 @@
 body{
   background-color: pink;
 }
+section {
+  height: 100vh; /* set section height to full viewscreen */
+  display: flex; /* sets self as flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+.flex-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+/* flex item */
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  gap: 1em;
+}
+/*grid item*/
+.grid-item-1{
+  width: 150px;
+  height: 150px;
+  display: flex; /* tiny flexbox to center text */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--clr-light);
+  text-shadow: 1px 1px 1px #6b6b6b;
+  font-weight: 700;
+  font-size: 2rem;
+}
