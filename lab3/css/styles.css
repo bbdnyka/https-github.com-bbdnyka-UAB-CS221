@@ -103,7 +103,7 @@ a:hover {
 /*
   Content wrap. pink background color(#ffccff)
 */
-#wrapper {
+.wrapper {
   width: 95%;
   background-color: #ffccff;
   margin-right: auto;
