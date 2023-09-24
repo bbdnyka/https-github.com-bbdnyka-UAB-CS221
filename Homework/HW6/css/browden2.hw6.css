@@ -22,10 +22,10 @@ section {
   display: grid;
   grid-template-rows: repeat(3, 150px);
   grid-template-columns: repeat(3, 150px);
-  gap: 1em;
+  gap: 0.5em;
 }
 /*grid item*/
-.grid-item-1{
+.grid-item{
   width: 150px;
   height: 150px;
   display: flex; /* tiny flexbox to center text */
@@ -36,4 +36,49 @@ section {
   text-shadow: 1px 1px 1px #6b6b6b;
   font-weight: 700;
   font-size: 2rem;
+}
+.item-1{
+  background-color: pink;
+}
+.item-2{
+  background-color: pink;
+}
+.item-3{
+  background-color: pink;
+}
+.item-4{
+  background-color: pink;
+}
+.item-5{
+  background-color: pink;
+}
+.item-6{
+  background-color: pink;
+}
+.item-7{
+  background-color: pink;
+}
+.item-8{
+  background-color: pink;
+}
+.item-9{
+  background-color: pink;
+}
+.item-10{
+  background-color: pink;
+}
+.item-11{
+  background-color: pink;
+}
+.item-12{
+  background-color: pink;
+}
+.item-13{
+  background-color: pink;
+}
+.item-14{
+  background-color: pink;
+}
+.item-15{
+  background-color: pink;
 }
