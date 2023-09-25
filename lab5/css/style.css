@@ -16,7 +16,7 @@
 }
 
 /*setting dafaults*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,17 +24,19 @@
 /*DEFAULT font and color*/
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom, 
-  var(--clr-pastellavender),
-  var(--clr-pastelblue),
-  var(--clr-pastelgreen));
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-pastellavender),
+    var(--clr-pastelblue),
+    var(--clr-pastelgreen)
+  );
 }
 .sticky-header {
   position: sticky;
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: #edf6f9;
+  background-color: var(--clr-pastelpink);
   z-index: 100;
 }
 /* Center the content to 70% of the header */
@@ -55,32 +57,32 @@ body {
 .nav-link {
   margin-left: 20px;
   text-decoration: none;
-  color: #003049;
+  color: white;
   font-size: 16px;
   position: relative;
   transition: font-size 0.3s ease, border-bottom 0.3s ease;
-  text-align: center;  /* This will help to keep the text centered within the grid cell */
+  text-align: center; /* This will help to keep the text centered within the grid cell */
 }
 .nav-link:hover {
   font-size: 20px;
 }
 /* Add a line at the bottom of the link when hovered */
 .nav-link:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -20px;
   left: 10px;
   width: 80%;
   height: 5px;
-  background-color: #f77f00;
+  background-color: white;
 }
 
 /* first iamge section */
-.my-img{
+.my-img {
   width: 100vw;
-  height: 100px; 
+  height: 100px;
   /* Use Unsplash for great hi-res images that work well for hero-images. */
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/lab5-edits/lab5/images/doughtnut.png");
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/lab5-edits/lab5/images/doughtnut.png');
   background-size: 120px; /* resize image to appear better*/
   background-repeat: repeat; /*repeat image only on one line */
   position: relative;
@@ -92,7 +94,12 @@ body {
 .my-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1); /* This adds a slight dark overlay. You can adjust as needed */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* This adds a slight dark overlay. You can adjust as needed */
   position: absolute;
   top: 0;
   left: 0;
@@ -106,8 +113,9 @@ body {
 #home {
   font-size: 48px;
   font-weight: bold;
-  color: white;
-  top: 50%; 
+  color: var(--clr-pastelpink);
+  text-shadow: 2px 2px 2px gray;
+  top: 50%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -115,21 +123,12 @@ body {
 }
 
 /* Main Content */
+.card figcaption{
+  font-size: small;
+}
 .content-wrapper {
   max-width: 80%;
   margin: 40px auto; /* Adding some top and bottom margin for spacing */
-}
-
-.content-row{
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  gap: 1em; /* space between the two columns */
-}
-
-.column {
-  display: flex;
-  align-items: start;
-  flex-wrap: wrap;
 }
 
 .card {
@@ -140,7 +139,7 @@ body {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
 }
 
-.card h2{
+.card h2 {
   font-size: 24px;
   margin-bottom: 20px; /* Adds some space between the header and the card content */
 }
@@ -158,24 +157,26 @@ ul li {
 
 ul li::before {
   content: '»';
-  color: #f77f00;
+  color: var(--clr-pastelpink);
   margin-right: 10px;
 }
 
 /* General styling for inputs and textarea */
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #aaa; 
+  border: 1px solid #aaa;
   border-radius: 5px;
   outline: none;
-  font-family: 'Lato', sans-serif;
 }
 
-.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus{
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
   background-color: #edf6f9;
-  border-bottom: 2px solid #f77f00;
+  border-bottom: 2px solid var(--clr-pastelpink);
 }
 
 .contact-form textarea {
@@ -183,11 +184,7 @@ ul li::before {
   resize: vertical; /* Allows only vertical resizing */
 }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-family: 'Lato', sans-serif;
-}
+
 
 .contact-form select {
   width: 100%;
@@ -196,34 +193,38 @@ ul li::before {
   margin-bottom: 20px;
   border: 1px solid #aaa;
   border-radius: 5px;
-  font-family: 'Lato', sans-serif;
   outline: none;
 }
 
 /* Styling the submit button */
-.contact-form button {
-  width: 100px; 
+.contact-form button,
+.contact-form .button{
+  width: 100px;
   height: 50px;
-  background-color: #f77f00; 
+  background-color: var(--clr-pastelpink);
   border: none;
   color: white;
   cursor: pointer;
-  font-family: 'Anton', sans-serif;
   font-size: 1em;
   transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #e56600;
+  background-color: var(--clr-pastellavender);
+}
+
+.contact-form fieldset{
+  padding: 20px;
 }
 
 footer {
-  bottom: 0%;         
-  width: 100%;        
-  background-color: #f77f00;
+  bottom: 0%;
+  width: 100%;
+  background-color: var(--clr-pastelpink);
   color: white;
   text-align: center;
   padding: 10px 0;
+  font-size: small;
 }
 
 /* Media Queries */

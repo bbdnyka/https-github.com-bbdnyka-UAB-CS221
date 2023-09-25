@@ -21,7 +21,7 @@
       <!--portfolio link-->
         <a href="#portfolio" class="nav-link">portfolio.</a>
       <!--Profile form link-->
-        <a href="profile" class="nav-link">profile.</a>
+        <a href="#profile" class="nav-link">profile.</a>
       <!--contact link-->
         <a href="#contact" class="nav-link">contact.</a>
       </div>
@@ -39,14 +39,14 @@
   <!--main-->
   <main>
     <div class = "content-wrapper">
-      <div class = "content-row">
         <!--about section-->
-        <div class="column">
+        
           <div class="card">
         <h2 id="about">About Me.</h2>
         <p>i am currently a computer science student set to graduate with a
           bachelor's in Fall 2024. i have a passion for coding, but I dabble in
           design here and there.</p>
+
           <!--picture drawn by me-->
         <figure>
           <img src="https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/lab5/images/pixel-art-afro-girl.png"
@@ -56,7 +56,9 @@
           </figure>
           </div>
         </div>
-        <div class="column">
+      
+      <div class = "content-wrapper">
+        
           <div class="card">
             <h2 id="extras">Extras.</h2>
             <ul>
@@ -68,10 +70,11 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="column">
+    
+      <div class = "content-wrapper">
+       
           <div class="card">
-            <h2 id="skills">Skill.</h2>
+            <h2 id="skills">Skills.</h2>
             <!--web dev skills-->
           <h3 id="web-dev">Web Development.</h3>
           <ul>
@@ -95,7 +98,8 @@
           </ul>
           </div>
         </div>
-        <div class="column">
+
+      <div class = "content-wrapper">
           <div class="card">
             <h2 id="portfolio">Projects.</h2>
             <ul>
@@ -104,12 +108,11 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-        <div class="column">
+      
+    <div class = "content-wrapper">
           <div class="card">
             <h2 id="profile">Create Your Profile</h2>
-              <form action = "https://httpbin.org/get" method = "get">
+            <form class="contact-form">
               <!--Form name input here-->
               <!--First name input-->
                 <label for="firstName">First Name:
@@ -152,8 +155,8 @@
               <label for="indecisive">I can't decide simple things for myself</label></br>
             </fieldset></br>
               <!--Submit button here-->
-              <input type="submit"/>
-              <input type="reset"/></br>
+              <input class="button" type="submit"/>
+              <input class="button" type="reset"/></br>
             </form>
           </div>
         </div>
@@ -163,9 +166,7 @@
       <div class="card">
         <h2 id="contact">Contact Me</h2>
       <form class="contact-form">
-        <div class="content-row">
         <!-- First Column -->
-        <div class="column">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Name" required>
           <label for="email">Your Email</label>
@@ -177,14 +178,10 @@
               <option value="phonebook">Phonebook</option>
               <option value="srsly">Seriously, how? I'm scared.</option>
           </select>
-        </div>
-        </div>
         <!-- Second Column -->
-        <div class="column">
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Message" required></textarea>
           <button type="submit">Submit</button>
-        </div>
       </div>
       </form>
     </div>
