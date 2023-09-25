@@ -144,6 +144,10 @@ body {
   margin-bottom: 20px; /* Adds some space between the header and the card content */
 }
 
+.card .nav-link{
+  color: black;
+}
+
 ul {
   list-style-type: none;
   padding: 10px;
