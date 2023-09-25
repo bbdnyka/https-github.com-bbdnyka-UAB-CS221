@@ -209,7 +209,8 @@ ul li::before {
   font-size: 1em;
   transition: background-color 0.3s ease;
 }
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form .button:hover{
   background-color: var(--clr-pastellavender);
 }
 .contact-form fieldset{
