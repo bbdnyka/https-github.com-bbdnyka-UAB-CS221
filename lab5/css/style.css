@@ -103,7 +103,7 @@ body {
 .my-img:hover .my-overlay {
   backdrop-filter: blur(0px);
 }
-.home {
+#home {
   font-size: 48px;
   font-weight: bold;
   color: white;
