@@ -158,3 +158,58 @@ ul li::before {
   color: #f77f00;
   margin-right: 10px;
 }
+
+/* General styling for inputs and textarea */
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #aaa; 
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus{
+  background-color: #edf6f9;
+  border-bottom: 2px solid #f77f00;
+}
+
+.contact-form textarea {
+  height: 150px; /* Adjust based on preference */
+  resize: vertical; /* Allows only vertical resizing */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  outline: none;
+}
+
+/* Styling the submit button */
+.contact-form button {
+  width: 100px; 
+  height: 50px;
+  background-color: #f77f00; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Anton', sans-serif;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e56600;
+}

@@ -156,6 +156,35 @@
             </form>
           </div>
         </div>
+        <!-- Contact Form Section -->
+    <div class="content-wrapper">
+      <div class="card">
+        <h2 id="contact">Contact Me</h2>
+      <form class="contact-form">
+        <div class="content-row">
+        <!-- First Column -->
+        <div class="column">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <label for="find-us">How did you find me?</label>
+          <select id="find-us" name="find-us">
+              <option value="social_media">Social Media</option>
+              <option value="google">Google</option>
+              <option value="phonebook">Phonebook</option>
+              <option value="srsly">Seriously, how? I'm scared.</option>
+          </select>
+        </div>
+        
+        <!-- Second Column -->
+        <div class="column">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+      </form>
 
       </div>
     </div>
