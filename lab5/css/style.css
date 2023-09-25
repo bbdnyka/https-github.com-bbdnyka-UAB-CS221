@@ -34,3 +34,85 @@ body {
   background-color: #edf6f9;
   z-index: 100;
 }
+/* Center the content to 70% of the header */
+.header-content {
+  max-width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Navigation styles */
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  align-items: center;
+}
+.nav-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #003049;
+  font-size: 16px;
+  position: relative;
+  transition: font-size 0.3s ease, border-bottom 0.3s ease;
+  text-align: center;  /* This will help to keep the text centered within the grid cell */
+}
+.nav-link:hover {
+  font-size: 20px;
+}
+/* Add a line at the bottom of the link when hovered */
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  width: 80%;
+  height: 5px;
+  background-color: #f77f00;
+}
+
+/* first iamge section */
+.my-img{
+  width: 100vw;
+  height: 100px; 
+  /* Use Unsplash for great hi-res images that work well for hero-images. */
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/lab5-edits/lab5/images/doughtnut.png");
+  background-size: 120px; /* resize image to appear better*/
+  background-repeat: repeat; /*repeat image only on one line */
+  position: relative;
+}
+
+/*overlay*/
+
+/* The overlay that will be clear on hover */
+.my-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* This adds a slight dark overlay. You can adjust as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  transition: backdrop-filter 1s ease;
+}
+
+.my-img:hover .my-overlay {
+  backdrop-filter: blur(0px);
+}
+.home {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  top: 50%; 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 2; /* Ensures the text stays on top of the overlay */
+}
+
+/* Main Content */
+.content-wrapper {
+  max-width: 80%;
+  margin: 40px auto; /* Adding some top and bottom margin for spacing */
+}
