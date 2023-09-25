@@ -180,11 +180,8 @@ ul li::before {
 }
 
 .contact-form textarea {
-  height: 150px; /* Adjust based on preference */
-  resize: vertical; /* Allows only vertical resizing */
+  height: 150px; /*text box height*/
 }
-
-
 
 .contact-form select {
   width: 100%;
@@ -208,15 +205,13 @@ ul li::before {
   font-size: 1em;
   transition: background-color 0.3s ease;
 }
-
 .contact-form button:hover {
   background-color: var(--clr-pastellavender);
 }
-
 .contact-form fieldset{
   padding: 20px;
 }
-
+/*copyright and back to top link styling*/
 footer {
   bottom: 0%;
   width: 100%;
@@ -226,7 +221,6 @@ footer {
   padding: 10px 0;
   font-size: small;
 }
-
 /* Media Queries */
 @media (max-width: 768px) {
   .content-row {
