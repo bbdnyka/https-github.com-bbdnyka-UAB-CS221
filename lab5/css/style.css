@@ -172,7 +172,7 @@ ul li::before {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #aaa;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
 }
 
@@ -193,7 +193,7 @@ ul li::before {
   background: #fff;
   margin-bottom: 20px;
   border: 1px solid #aaa;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
 }
 
