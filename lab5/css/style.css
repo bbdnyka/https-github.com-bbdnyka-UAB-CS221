@@ -213,3 +213,19 @@ ul li::before {
 .contact-form button:hover {
   background-color: #e56600;
 }
+
+footer {
+  bottom: 0%;         
+  width: 100%;        
+  background-color: #f77f00;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .content-row {
+    grid-template-columns: 1fr;
+  }
+}
