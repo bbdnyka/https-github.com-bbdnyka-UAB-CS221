@@ -23,8 +23,11 @@
 }
 /*DEFAULT font and color*/
 body {
-  font-family: 'Lato', sans-serif;
-  background: #f1f1f1;
+  font-family: sans-serif;
+  background-image: linear-gradient(to bottom, 
+  var(--clr-pastellavender),
+  var(--clr-pastelblue),
+  var(--clr-pastelgreen));
 }
 .sticky-header {
   position: sticky;
