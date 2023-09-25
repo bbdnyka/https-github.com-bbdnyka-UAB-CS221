@@ -216,6 +216,7 @@ ul li::before {
 }
 .contact-form fieldset{
   padding: 20px;
+  border-radius: 10px;
 }
 /*copyright and back to top link styling*/
 footer {
