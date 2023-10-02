@@ -16,14 +16,14 @@ body{
 /* flex item */
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(3, 300px);
-  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 200px);
   gap: 0.5em;
 }
 /*grid item*/
 .grid-item{
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   display: flex; /* flexbox to center text */
   justify-content: center;
   align-items: center;
@@ -32,4 +32,47 @@ body{
   text-shadow: 1px 1px 1px #6b6b6b;
   font-weight: 500;
   font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item-1{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/doughtnut.png");
+
+}
+.item-2{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/sylveon-transpa.webp");
+  
+}
+.item-3{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-old.avif");
+
+}
+.item-4{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/pixel-frog.png");
+
+}
+.item-5{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/moon-full.jpeg");
+
+  
+}
+.item-6{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-young.avif");
+
+  
+}
+.item-7{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/howl-wolf.jpeg");
+
+}
+.item-8{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/weirded_out_cat.jpeg");
+
+  
+}
+.item-9{
+  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/uzui-excited.webp");
+ 
+  
 }
