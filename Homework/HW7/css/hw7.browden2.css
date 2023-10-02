@@ -10,6 +10,10 @@
 body {
   background-color: pink;
 }
+header{
+  display: flex;
+  justify-content: center;
+}
 .sticky-header{
   position: sticky;
   top: 0%;
@@ -117,7 +121,34 @@ body {
   scale: 1.25;
   translate: -50px -50px;
 }
-
+/*nth child()*/
+.item-1:nth-child(odd){
+  border: 5px dotted white;
+}
+.item-2:nth-child(even){
+  border: 5px solid white;
+}
+.item-3:nth-child(odd){
+  border: 5px dotted white;
+}
+.item-4:nth-child(even){
+  border: 5px solid white;
+}
+.item-5:nth-child(odd){
+  border: 5px dotted white;
+}
+.item-6:nth-child(even){
+  border: 5px solid white;
+}
+.item-7:nth-child(odd){
+  border: 5px dotted white;
+}
+.item-8:nth-child(even){
+  border: 5px solid white;
+}
+.item-9:nth-child(odd){
+  border: 5px dotted white;
+}
 /*before hovers*/
 .item-1:hover::before {
   content: 'Delicious Doughnut';
@@ -283,6 +314,38 @@ body {
 }
 /*after hovers*/
 .item-1:hover::after {
-  content: '\F52A';
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-2:hover::after {
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-3:hover::after {
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-4:hover::after {
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-5:hover::after {
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-6:hover::after {
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-7:hover::after {
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-8:hover::after {
+  content: "\1F50D";
+  z-index: 100;
+}
+.item-9:hover::after {
+  content: "\1F50D";
   z-index: 100;
 }
