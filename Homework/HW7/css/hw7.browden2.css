@@ -1,3 +1,5 @@
+/*boostrap import*/
+@import url("https://icons.getbootstrap.com/icons/search/");
 /* setting default values for padding, margin, and box sizing */
 *{
   padding:0px;
@@ -262,3 +264,39 @@ body{
   text-shadow: none;
 }
 /*after hovers*/
+.item-1:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-2:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-3:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-4:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-5:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-6:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-7:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-8:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
+.item-9:hover::after{
+  content: "\F52A";
+  z-index: 100;
+}
