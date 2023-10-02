@@ -6,6 +6,7 @@
 body{
   background-color: pink;
 }
+/*flex container*/
 .photo-container{
   width: 100vw;
   height: 100vh;
@@ -13,14 +14,14 @@ body{
   justify-content: center; /* center horizontally */
   align-items: center; /* center vertically */
 }
-/* flex item */
+/* photo containe item */
 .grid-container {
   display: grid;
   grid-template-rows: repeat(3, 200px);
   grid-template-columns: repeat(3, 200px);
   gap: 0.5em;
 }
-/*grid item*/
+/*grid item* for child items*/
 .grid-item{
   width: 200px;
   height: 200px;
