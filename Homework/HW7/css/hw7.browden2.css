@@ -1,17 +1,21 @@
 /*boostrap import*/
-@import url("https://icons.getbootstrap.com/icons/search/");
+@import url('https://icons.getbootstrap.com/icons/search/');
 /* setting default values for padding, margin, and box sizing */
-*{
-  padding:0px;
-  margin:0px;
+* {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 /*setting background color*/
-body{
+body {
   background-color: pink;
 }
+.sticky-header{
+  position: sticky;
+  top: 0%;
+}
 /*flex container*/
-.photo-container{
+.photo-container {
   width: 100vw;
   height: 100vh;
   display: flex; /* for centering content */
@@ -26,7 +30,7 @@ body{
   gap: 0.5em;
 }
 /*grid item* for child items*/
-.grid-item{
+.grid-item {
   width: 200px;
   height: 200px;
   display: flex; /* flexbox to center text */
@@ -43,260 +47,242 @@ body{
 
   /*doughnut*/
 }
-.item-1{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/doughtnut.png");
-
+.item-1 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/doughtnut.png');
 }
 /*pokemon*/
-.item-2{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/sylveon-transpa.webp");
-  
+.item-2 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/sylveon-transpa.webp');
 }
 /*anime*/
-.item-3{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-old.avif");
-
+.item-3 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-old.avif');
 }
 /*frog*/
-.item-4{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/pixel-frog.png");
-
+.item-4 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/pixel-frog.png');
 }
 /*moon*/
-.item-5{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/moon-full.jpeg");
-
-  
+.item-5 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/moon-full.jpeg');
 }
 /*anime*/
-.item-6{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-young.avif");
-
-  
+.item-6 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-young.avif');
 }
 /*wolf*/
-.item-7{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/howl-wolf.jpeg");
-
+.item-7 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/howl-wolf.jpeg');
 }
 /*cat*/
-.item-8{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/weirded_out_cat.jpeg");
-
-  
+.item-8 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/weirded_out_cat.jpeg');
 }
 /*anime*/
-.item-9{
-  background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/uzui-excited.webp"); 
+.item-9 {
+  background-image: url('https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/uzui-excited.webp');
 }
 
 /* scale hovers with movement */
-.item-1:hover{
+.item-1:hover {
   scale: 1.25;
   translate: 50px 50px;
 }
-.item-2:hover{
+.item-2:hover {
   scale: 1.25;
 }
-.item-3:hover{
+.item-3:hover {
   scale: 1.25;
   translate: -50px 50px;
 }
-.item-4:hover{
+.item-4:hover {
   scale: 1.25;
   translate: 50px 0px;
 }
-.item-5:hover{
+.item-5:hover {
   scale: 1.25;
-  
 }
-.item-6:hover{
+.item-6:hover {
   scale: 1.25;
   translate: -50px 0px;
 }
-.item-7:hover{
+.item-7:hover {
   scale: 1.25;
   translate: 50px -50px;
 }
-.item-8:hover{
+.item-8:hover {
   scale: 1.25;
-  
 }
-.item-9:hover{
+.item-9:hover {
   scale: 1.25;
   translate: -50px -50px;
 }
 
 /*before hovers*/
-.item-1:hover::before{
-  content: "Delicious Doughnut";
+.item-1:hover::before {
+  content: 'Delicious Doughnut';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-2:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-2:hover::before {
+  content: 'Eevee evolved into Sylveon!';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-3:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-3:hover::before {
+  content: 'Domain expansion. Unlimited Void.';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-4:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-4:hover::before {
+  content: 'Ribbit!';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-5:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-5:hover::before {
+  content: 'Silence.';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-6:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-6:hover::before {
+  content: 'I am the strongest.';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-7:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-7:hover::before {
+  content: 'Wolf Howling at the Moon';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-8:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-8:hover::before {
+  content: 'Hey weirdo.';
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
-.item-9:hover::before{
-  content: "Wolf Howling at the Moon";
+.item-9:hover::before {
+  content: "Fifth Form: String Performance!";
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)); /* Semi-transparent gradient */
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  ); /* Semi-transparent gradient */
   display: flex;
   justify-content: center;
   align-items: top;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 100%;
-  height:200px;
+  height: 200px;
   border-radius: 25px;
   color: rgb(26, 26, 26);
   text-shadow: none;
 }
 /*after hovers*/
-.item-1:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-2:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-3:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-4:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-5:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-6:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-7:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-8:hover::after{
-  content: "\F52A";
-  z-index: 100;
-}
-.item-9:hover::after{
-  content: "\F52A";
+.item-1:hover::after {
+  content: '\F52A';
   z-index: 100;
 }
