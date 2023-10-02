@@ -1,8 +1,10 @@
+/* setting default values for padding, margin, and box sizing */
 *{
   padding:0px;
   margin:0px;
   box-sizing: border-box;
 }
+/*setting background color*/
 body{
   background-color: pink;
 }
