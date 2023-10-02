@@ -35,42 +35,52 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  /*doughnut*/
 }
 .item-1{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/doughtnut.png");
 
 }
+/*pokemon*/
 .item-2{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/sylveon-transpa.webp");
   
 }
+/*anime*/
 .item-3{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-old.avif");
 
 }
+/*frog*/
 .item-4{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/pixel-frog.png");
 
 }
+/*moon*/
 .item-5{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/moon-full.jpeg");
 
   
 }
+/*anime*/
 .item-6{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/satoro-young.avif");
 
   
 }
+/*wolf*/
 .item-7{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/howl-wolf.jpeg");
 
 }
+/*cat*/
 .item-8{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/weirded_out_cat.jpeg");
 
   
 }
+/*anime*/
 .item-9{
   background-image: url("https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/Homework/HW7/img/uzui-excited.webp");
  
