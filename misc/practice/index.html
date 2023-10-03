@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title> Denyka Brown </title>
+    <!--project setup-->
+
+<canvas></canvas>
+<!--show js file-->
+<script src="js/index.js"></script>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+      <h2>Create Your Profile</h2>
+      <form action = "https://httpbin.org/get" method = "get">
+      <!--Form name input here-->
+      <!--First name input-->
+        <label for="firstName">First Name:
+        <input type="text" id="firstName" name="firstName" 
+        placeholder="First Name" required/></label></br>
+      <!--Last Name Input Field-->
+        <label for="lastName">Last Name:
+        <input type="text" id="lastName" name="lastName"
+        placeholder="Last Name" required/></label></br>
+      <!--Profile image input field-->
+      <p>
+        <label for="avatar">Choose a profile photo(must be jpeg or png image):
+          <input type="file" id="avatar" name="avatar"
+          accept="image/png, image/jpeg"
+          required/></label></p>
+      <!--Form Scrolling Textbox here-->
+      <label for="pet-select">Choose your favorite pet:</label></br>
+      <select name="pets" id="pet-select" multiple
+      required>
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="turtle">Turtle</option>
+        <option value="snake">Snake</option>
+        <option value="guineaPig">Guinea Pig</option>
+        <option value="rock">Rock</option>
+      </select></br></br>
+    <!--TextArea Element-->
+    <label for="reasoning">Why do you like this pet?(Please provide your reasoning for choosing this pet below.)</label><br>
+    <textarea id="resoning" name="reasoning" rows="4" cols="30">
+    </textarea></br></br>
+    <!--Form Field Set here-->
+    <fieldset>
+      <legend>Do you like pickles?</legend>
+      <input type="radio" id="yes" name="agree" value="yes"/>
+      <label for="agree">Yes</label></br>
+      <input type="radio" id="no" name="disagree" value="no"/>
+      <label for="disagree">No</label></br>
+      <input type="radio" id="indecisive" name="I can't decide" value="indecisive"/>
+      <label for="indecisive">I can't decide simple things for myself</label></br>
+    </fieldset></br>
+
+      <!--Submit button here-->
+      <input type="submit"/>
+      <input type="reset"/></br>
+    </form>
+  </body>
+</html>
