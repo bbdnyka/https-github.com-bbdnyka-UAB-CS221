@@ -1,6 +1,9 @@
 //object for editing the canvas
 const canvas = document.querySelector("canvas")
-const firstname=document.getElementById("firstName")
-const lastName=document.getElementById("lastName")
+let firstname=document.getElementById("firstName")
+let lastName=document.getElementById("lastName")
+firstname.addEventListener("submit",(e)=>{
+  e.preventDefault?();
+}
 console.log(firstname)
 console.log(lastName)
