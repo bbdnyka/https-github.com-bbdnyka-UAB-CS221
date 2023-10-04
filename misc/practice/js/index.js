@@ -5,7 +5,7 @@ loginform.addEventListener("submit",(e)=>{
   e.preventDefault();
 
   let firstname = document.getElementById("firstName");
-  let lastname = document.getElementById("lastNAme");
+  let lastname = document.getElementById("lastName");
 
   if (username.value == "" || password.value == "") {
     alert("Ensure you input a value in both fields!")
