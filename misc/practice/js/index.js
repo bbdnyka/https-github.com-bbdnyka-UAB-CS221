@@ -1,9 +1,23 @@
 //object for editing the canvas
 const canvas = document.querySelector("canvas")
-let firstname=document.getElementById("firstName")
-let lastName=document.getElementById("lastName")
-firstname.addEventListener("submit",(e)=>{
-  e.preventDefault?();
-}
-console.log(firstname)
-console.log(lastName)
+let loginform = document.getElementById("loginForm")
+loginform.addEventListener("submit",(e)=>{
+  e.preventDefault();
+
+  let firstname = document.getElementById("firstName");
+  let lastname = document.getElementById("lastNAme");
+
+  if (username.value == "" || password.value == "") {
+    alert("Ensure you input a value in both fields!")
+  } 
+    else {
+      // perform operation with form input
+      alert("This form has been successfully submitted!");
+      console.log(
+        `This form has a last name of ${lastname.value} and a first name of ${firstname.value}`
+      );
+  
+      lastname.value = "";
+      firstname.value = "";
+    }
+});
