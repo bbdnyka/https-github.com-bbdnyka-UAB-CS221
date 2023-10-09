@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Portfolio!</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!--main-->
+    <!--nav section-->
+    <header class = "sticky-header">
+      <div class="header-content">
+        <!-- Added hamburger menu -->
+          <!-- Checkbox for toggling -->
+          <input type="checkbox" id="menuToggle">
+          <!-- Label styled as hamburger icon -->
+          <label for="menuToggle" class="hamburger-icon-container">
+            <div class="hamburger-icon"></div>
+          </label>
+      <!-- End Checkbox -->
+      <ul class="navigation">
+      <!--home link-->
+        <li><a href="#home" class="nav-link">home.</a></li>
+      <!--about section link-->
+        <li><a href="#about" class="nav-link">about.</a></li>
+      <!--portfolio link-->
+        <li><a href="#portfolio" class="nav-link">portfolio.</a></li>
+      <!--Profile form link-->
+        <li><a href="#profile" class="nav-link">profile.</a></li>
+      <!--contact link-->
+        <li><a href="#contact" class="nav-link">contact.</a></li>
+      </ul>
+      </div>
+    </header>
+
+    <!--first image section-->
+    <section class="my-img">
+      <div class="my-overlay">
+        <!--my image text-->
+        <h1 id="home"> WELCOME TO MY WORLD</h1>
+      </div>
+    </section>
+
+  <!--main-->
+  <main>
+    <div class = "content-wrapper">
+        <!--about section-->
+        
+          <div class="card">
+        <h2 id="about">About Me.</h2>
+        <p>i am currently a computer science student set to graduate with a
+          bachelor's in Fall 2024. i have a passion for coding, but I dabble in
+          design here and there.</p>
+
+          <!--picture drawn by me-->
+        <figure>
+          <img src="https://stackblitz.com/files/web-platform-bvtgpr/github/bbdnyka/https-github.com-bbdnyka-UAB-CS221/main/lab5/images/pixel-art-afro-girl.png"
+          alt="pixel-girl-De'Nyka Brown"
+          loading="lazy"/>
+          <figcaption> I like designs that are cute like this!<br>Created using PhotoShop -De'Nyka Brown</figcaption>
+          </figure>
+          </div>
+        </div>
+      
+      <div class = "content-wrapper">
+        
+          <div class="card">
+            <h2 id="extras">Extras.</h2>
+            <ul>
+              <li>I live in a tiny studio apartment.</li>
+              <li>I am a super neat freak(dust does not survive long in my apartment.)</li>
+              <li>I enjoy reading mangas and poetry.</li>
+              <li>I binge watch anime</li>
+              <li>I play all kinds of video games(designing my own as well. hint hint.)
+              </li>
+            </ul>
+          </div>
+      </div>
+    
+      <div class = "content-wrapper">
+       
+          <div class="card">
+            <h2 id="skills">Skills.</h2>
+            <!--web dev skills-->
+          <h3 id="web-dev">Web Development.</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <!--mobile dev skills-->
+          <h3 id="mobile">Mobile App Development.</h3>
+          <ul>
+            <li>Kotlin</li>
+            <li>Swift</li>
+          </ul>
+          <!--Coding-->
+          <h3 id="coding">Coding.</h3>
+          <ul>
+            <li>Java</li>
+            <li>C Programming</li>
+            <li>Python</li>
+            <li>Algorithms and Data Structures</li>
+          </ul>
+          </div>
+        </div>
+
+      <div class = "content-wrapper">
+          <div class="card">
+            <h2 id="portfolio">Projects.</h2>
+            <ul>
+              <li><a class="nav-link" href="https://github.com/bbdnyka/UAB-CS221">web developmet projects (Some website development that I have worked on.)</a></li>
+              <li><a class="nav-link" href="https://github.com/bbdnyka/Plantage2">inprogress projects (Designs and codes that I am still perfecting.)</a></li>
+            </ul>
+          </div>
+        </div>
+      
+    <div class = "content-wrapper">
+          <div class="card">
+            <h2 id="profile">Create Your Profile</h2>
+            <form class="contact-form" action="https://httpbin.org/get" method = "get">
+              <!--Form name input here-->
+              <!--First name input-->
+                <label for="firstName">First Name:
+                <input type="text" id="firstName" name="firstName" 
+                placeholder="First Name" required/></label></br>
+              <!--Last Name Input Field-->
+                <label for="lastName">Last Name:
+                <input type="text" id="lastName" name="lastName"
+                placeholder="Last Name" required/></label></br>
+              <!--Profile image input field-->
+              <p>
+                <label for="avatar">Choose a profile photo(must be jpeg or png image):
+                  <input type="file" id="avatar" name="avatar"
+                  accept="image/png, image/jpeg"
+                  required/></label></p>
+              <!--Form Scrolling Textbox here-->
+              <label for="pet-select">Choose your favorite pet:</label></br>
+              <select name="pets" id="pet-select" multiple
+              required>
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="turtle">Turtle</option>
+                <option value="snake">Snake</option>
+                <option value="guineaPig">Guinea Pig</option>
+                <option value="rock">Rock</option>
+              </select></br></br>
+            <!--TextArea Element-->
+            <label for="reasoning">Why do you like this pet?(Please provide your reasoning for choosing this pet below.)</label><br>
+            <textarea id="resoning" name="reasoning" rows="4" cols="30">
+            </textarea></br></br>
+            <!--Form Field Set here-->
+            <fieldset>
+              <legend>Do you like pickles?</legend>
+              <input type="radio" id="yes" name="agree" value="yes"/>
+              <label for="agree">Yes</label></br>
+              <input type="radio" id="no" name="disagree" value="no"/>
+              <label for="disagree">No</label></br>
+              <input type="radio" id="indecisive" name="I can't decide" value="indecisive"/>
+              <label for="indecisive">I can't decide simple things for myself</label></br>
+            </fieldset></br>
+              <!--Submit button here-->
+              <input class="button" type="submit"/>
+              <input class="button" type="reset"/></br>
+            </form>
+          </div>
+        </div>
+    
+        <!-- Contact Form Section -->
+    <div class="content-wrapper">
+      <div class="card">
+        <h2 id="contact">Contact Me</h2>
+      <form class="contact-form" action="mailto:denyka@brown.com" method="get" enctype="text/plain">
+        <!-- First Column -->
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <label for="find-us">How did you find me?</label>
+          <select id="find-us" name="find-us">
+              <option value="social_media">Social Media</option>
+              <option value="google">Google</option>
+              <option value="phonebook">Phonebook</option>
+              <option value="srsly">Seriously, how? I'm scared.</option>
+          </select>
+        <!-- Second Column -->
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+      </div>
+      </form>
+    </div>
+    </div>
+</main>
+<!--footer/copyright-->
+    <!--id for nav link-->
+    <footer id="footer">
+      <!--copyright-->
+      <div>
+        &copy; Copyright 2023 De'Nyka Brown
+      </div>
+      <div>
+        <!--back to top section-->
+      <a class= "nav-link" href="#top">back to top</a>
+      </div>
+    </footer>
+
+</body>
+</html>
