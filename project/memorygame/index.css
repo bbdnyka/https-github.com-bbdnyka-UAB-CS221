@@ -14,6 +14,7 @@ body{
 .wrapper{
     width: 500px;
     height: 500px;
+    padding: 10px;
     background: white;
     border-radius: 10px;
 }
@@ -44,6 +45,6 @@ body{
     display: none;
 }
 .card .back-view img{
-    max-width: 100px; /* default width of image */
-    max-height: 100px; /*default height of image */
+    max-width: 150px; /* default width of image */
+    max-height: 150px; /*default height of image */
 }
