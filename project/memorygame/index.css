@@ -1,0 +1,40 @@
+/* set default padding, margin, box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    background:pink;
+}
+.wrapper{
+    height: 400px;
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.cards, .card, .view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: grid;
+    grid-template-rows: repeat(3, 125px);
+    grid-template-columns: repeat(3, 125px);/* places iamges in a grid */
+    gap: 0.5em;
+}
+.cards .card{
+    display: flex;
+    padding: 40px;
+    background-size: cover;
+    justify-content: center;/* centers imaged within grids */
+}
+.card .back-view img{
+    max-width: 45px; /* default width of image */
+    max-height: 50px; /*default height of image */
+}
