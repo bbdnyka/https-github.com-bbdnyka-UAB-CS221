@@ -12,8 +12,8 @@ body{
     background:pink;
 }
 .wrapper{
-    height: 500px;
     width: 500px;
+    height: 500px;
     background: white;
     border-radius: 10px;
 }
@@ -33,7 +33,6 @@ body{
 .cards .card{
     cursor: pointer;
     display: flex;
-    padding: 10px;
     justify-content: center;/* centers imaged within grids */
 }
 .cards .card .view{
