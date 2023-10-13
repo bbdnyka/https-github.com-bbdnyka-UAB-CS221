@@ -45,6 +45,6 @@ body{
     display: none;
 }
 .card .back-view img{
-    max-width: 45px; /* default width of image */
-    max-height: 50px; /*default height of image */
+    max-width: 100px; /* default width of image */
+    max-height: 100px; /*default height of image */
 }
