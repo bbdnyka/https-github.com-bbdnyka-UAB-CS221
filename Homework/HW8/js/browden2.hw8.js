@@ -19,6 +19,6 @@ switch (true) {
     text = "Your grade: F. Your treat: Dirt. You don't deserve anything.";
     break;
   default:
-    text = 'Insufficient value. Please reload and use numbers between 1-100.';
+    text = 'Insufficient value. Please reload and use a number between 1-100.';
 }
 console.log(text);
