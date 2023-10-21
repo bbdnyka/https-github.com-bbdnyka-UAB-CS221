@@ -1,5 +1,5 @@
 let text;
-let yourGrade=prompt("Enter the grade here: ");
+let yourGrade=prompt("Enter the grade here: ","A");
 switch(yourGrade){
   case "A":
     text="Wow. You're actually smart.";
@@ -16,4 +16,7 @@ switch(yourGrade){
   case "F":
     text="Mmight be hard to come back from this one.";
     break;
+  default:
+    text="Insufficient value";
 }
+console.log(text);
