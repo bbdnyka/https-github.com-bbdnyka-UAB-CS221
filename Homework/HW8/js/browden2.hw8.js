@@ -1,6 +1,6 @@
 let text;
 let grade;
-let enterGrade = prompt('Enter grade in a number format here: ', '100');
+let enterGrade = prompt('Enter grade in a number format here: ', 'i.e. 100');
 
 switch (true) {
   case enterGrade >= 90:
