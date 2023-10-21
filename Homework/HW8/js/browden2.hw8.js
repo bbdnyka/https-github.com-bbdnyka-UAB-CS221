@@ -19,6 +19,6 @@ switch (true) {
     text = 'Your grade: F. Dirt.';
     break;
   default:
-    text = 'Insufficient value. Please use numbers between 1-100.';
+    text = 'Insufficient value. Please use numbers between 1-100.', enterGrade;
 }
 console.log(text);
