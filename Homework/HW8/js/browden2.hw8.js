@@ -9,7 +9,7 @@ let enterGrade = prompt('Enter grade in a number format here: ', 'i.e. 50');
 switch (
   true //switch case for calculating/translating grades and issuing treats
 ) {
-  case enterGrade >= 90 && enterGrade < 100: //grade: 90-100
+  case enterGrade >= 90 && enterGrade <= 100: //grade: 90-100
     grade += enterGrade.toString();
     letterGrade += 'A.';
     treat += 'broccoli.';
@@ -39,7 +39,8 @@ switch (
     treat += 'Air.';
     console.log(grade + '.' + '\n' + letterGrade + '\n' + treat);
     break;
-  default://for input errors. Number not between 1-100, letters entered, more than one number,  etc.
+  default:
+    //for input errors. Number not between 1-100, letters entered, more than one number,  etc.
     text = 'Insufficient value. Please use numbers between 1-100.';
     console.log(text);
 }
