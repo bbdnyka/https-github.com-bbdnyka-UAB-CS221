@@ -39,8 +39,7 @@ switch (
     treat += 'Air.';
     console.log(grade + '.' + '\n' + letterGrade + '\n' + treat);
     break;
-  default:
-    //for input errors. Number not between 1-100, letters entered, more than one number,  etc.
+  default://for input errors. Number not between 1-100, letters entered, more than one number,  etc.
     text = 'Insufficient value. Please use numbers between 1-100.';
     console.log(text);
 }
