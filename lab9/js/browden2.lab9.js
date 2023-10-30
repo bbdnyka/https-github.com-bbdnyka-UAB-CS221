@@ -1,5 +1,6 @@
 
 //Deciding a winner : scissors beats paper, rock beats scissors, paper beats rock
+//Reload browser to play again
 
 //Chooses a random play for computer
 function computerPlay(){
@@ -32,8 +33,10 @@ function game() {
   let computerScore = 0;
 
   for (let i = 0; i < 1; i++) {// for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
+
     //player enters choice here
-    const playerSelection = prompt("Enter Rock, Paper, or Scissors: ", 'Enter here');
+    const playerSelection = prompt("Enter Rock, Paper, or Scissors: ");
+
     //error handling
     if(playerSelection === null){
       break;
