@@ -38,7 +38,7 @@ function game() {
     const playerSelection = prompt("Enter Rock, Paper, or Scissors: ");
 
     //error handling
-    if(playerSelection === null){
+    if(playerSelection === null || playerSelection === ''){
       break;
     }
     const computerSelection = computerPlay();//variable holds random element chosen from computerPlayer() 
