@@ -33,7 +33,7 @@ function game() {
 
   for (let i = 0; i < 1; i++) {// for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
     //player enters choice here
-    //const playerSelection = prompt("Enter Rock, Paper, or Scissors: ", 'Enter here');
+    const playerSelection = prompt("Enter Rock, Paper, or Scissors: ", 'Enter here');
     const computerSelection = computerPlay();//variable holds random element chosen from computerPlayer() 
 
     //increases playerScore or computerScores based on decision from playRound()
