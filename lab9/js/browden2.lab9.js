@@ -39,6 +39,7 @@ function game() {
 
     //error handling
     if(playerSelection === null || playerSelection === ''){
+      console.log('No option entered');
       break;
     }
     const computerSelection = computerPlay();//variable holds random element chosen from computerPlayer() 
@@ -66,5 +67,6 @@ function game() {
     console.log("It's a tie game!");
   }
 }
+
 //function call for running game loop
 game();
