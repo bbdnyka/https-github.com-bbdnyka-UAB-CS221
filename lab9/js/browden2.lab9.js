@@ -12,8 +12,8 @@ function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
   while (playerSelection == null || playerSelection == '') {
-    playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
     console.log('invalid input');
+    return playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
   }
 
   return playerSelection;
