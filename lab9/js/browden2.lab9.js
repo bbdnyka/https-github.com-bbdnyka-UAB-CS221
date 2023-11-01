@@ -54,7 +54,6 @@ function game() {
   let computerScore = 0;
 
   for (let i = 0; i < 1; i++) {//Manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
-
     //game ends if players clicks "Cancel"
     if (playersPlay() === null) {
       return console.log('Player ended game.');
