@@ -14,7 +14,7 @@ function playersPlay() {
 
   if (playerSelection === null) {
     // User clicked "Cancel" or pressed "Esc"
-    alert("You canceled the input.");
+    return alert("You canceled the input.");
 } else {
     // User entered some input
     playerSelection == playerSelection.toLowerCase();
