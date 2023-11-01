@@ -23,9 +23,9 @@ function playersPlay() {
 
   //if input is anything other than "rock" "paper" "scissors" "user will be prompted to input the correct input
   while (
-    playerSelection !== 'rock' &&
-    playerSelection !== 'paper' &&
-    playerSelection !== 'scissors'
+    playerSelection != 'rock' &&
+    playerSelection != 'paper' &&
+    playerSelection != 'scissors'
   ) {
     playerSelection = prompt('Invalid input. Enter Rock, Paper, or Scissors: ');
   }
