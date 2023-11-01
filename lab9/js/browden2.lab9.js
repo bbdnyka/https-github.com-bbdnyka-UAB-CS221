@@ -53,8 +53,7 @@ function game() {
   let playerScore = 0;
   let computerScore = 0;
 
-  for (let i = 0; i < 3; i++) {
-    // for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
+  for (let i = 0; i < 1; i++) {//Manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
 
     //game ends if players clicks "Cancel"
     if (playersPlay() === null) {
