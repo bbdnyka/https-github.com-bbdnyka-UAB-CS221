@@ -27,7 +27,8 @@ function playersPlay() {
     playerSelection != 'paper' &&
     playerSelection != 'scissors'
   ) {
-    playerSelection = prompt('Invalid input. Enter Rock, Paper, or Scissors: ');
+    alert('Invalid input. Only accept "rock," "paper," or "Scissors." ')
+    playerSelection;
   }
   return playerSelection;
 }
