@@ -6,7 +6,7 @@ function computerPlay() {
   const computerOpt = ['rock', 'paper', 'scissors'];
   const random = Math.floor(Math.random() * computerOpt.length);
   return random, computerOpt[random];
-}\
+}
 //error handling
 function playersPlay() {
   //player enters choice here
