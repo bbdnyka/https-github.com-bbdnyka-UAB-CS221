@@ -11,15 +11,15 @@ function computerPlay() {
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter rock, paper, or scissors: ');
-
-  if (playerSelection === null) {
+  playerSelection == playerSelection.toLowerCase();
+  /*if (playerSelection === null) {
     // Player clicked "Cancel." Have to click "Cancel" for each round.
     alert('Player canceled their input.');
     return playerSelection;
   } else {
     // player input lowercased
     playerSelection == playerSelection.toLowerCase();
-  }
+  }*/
 
   //if input is anything other than "rock" "paper" "scissors" "user will be prompted to input the correct input
   while (
@@ -36,6 +36,7 @@ function playersPlay() {
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
   //statement for deciding winner of each round
+  
   if (playerSelection === computerSelection) {
     return "It's a tie!";
   } else if (
