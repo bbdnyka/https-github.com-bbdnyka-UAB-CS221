@@ -9,19 +9,17 @@ function computerPlay() {
 }
 //error handling
 function playersPlay() {
-  let selection;
+  
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
-
-  playerSelection = playerSelection.toLowerCase();
-
-  while(playerSelection == null || 
-    playerSelection == ""
+  let selection = playerSelection.toLowerCase();
+  while(selection == null || 
+    selection == ""
     ){
     console.log("invalid input");
-    return console.log(playerSelection);
+    console.log(playerSelection);
   }
-  return playerSelection
+  return selection
 }
 
 //Decides the winner of each round. Function called in game()
