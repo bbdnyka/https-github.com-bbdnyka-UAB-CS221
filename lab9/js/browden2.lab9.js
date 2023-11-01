@@ -9,23 +9,16 @@ function computerPlay() {
 }
 //error handling
 function playersPlay() {
-  
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
   let selection = playerSelection.toLowerCase();
-  while(selection == null || 
-    selection == ""
-    ){
-    console.log("invalid input");
-    console.log(playerSelection);
-  }
-  return selection
+
+  return selection;
 }
 
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
-  
-  playerSelection=playersPlay();
+  playerSelection = playersPlay();
 
   //statement for deciding winner of each round
   if (playerSelection === computerSelection) {
@@ -49,8 +42,7 @@ function game() {
   for (let i = 0; i < 1; i++) {
     // for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
 
-    
-    const playerSelection = playersPlay();//calls function to get players answer
+    const playerSelection = playersPlay(); //calls function to get players answer
     const computerSelection = computerPlay(); //variable holds random element chosen from computerPlayer()
 
     //increases playerScore or computerScores based on decision from playRound()
