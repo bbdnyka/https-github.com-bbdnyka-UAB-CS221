@@ -7,14 +7,14 @@ function computerPlay() {
   const random = Math.floor(Math.random() * computerOpt.length);
   return random, computerOpt[random];
 }
-//error handling
+//error handling for player input
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
 
   if (playerSelection === null) {
     // Player clicked "Cancel" .
-    alert('You canceled the input.');
+    alert('Player canceled the game.');
     return playerSelection;
   } else {
     // player input lowercased
