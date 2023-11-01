@@ -6,7 +6,7 @@ function computerPlay() {
   const computerOpt = ['rock', 'paper', 'scissors'];
   const random = Math.floor(Math.random() * computerOpt.length);
   return random, computerOpt[random];
-}
+}\
 //error handling
 function playersPlay() {
   //player enters choice here
@@ -16,19 +16,16 @@ function playersPlay() {
     // User clicked "Cancel" or pressed "Esc"
     return alert("You canceled the input.");
 } else {
-    // User entered some input
+    // player input lower cased
     playerSelection == playerSelection.toLowerCase();
 }
     
-
+//if input is anything other than rock, paper, or scissors, user will be prompted to input the correct input
   while(
     playerSelection != 'rock' &&
     playerSelection != 'paper' &&
     playerSelection != 'scissors'
     ){
-      if(playerSelection == 'Cancel'){
-        break;
-      }
       playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
     }
   return playerSelection;
