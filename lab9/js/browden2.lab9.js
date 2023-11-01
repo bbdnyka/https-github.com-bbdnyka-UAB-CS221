@@ -21,15 +21,15 @@ function playersPlay() {
     playerSelection == playerSelection.toLowerCase();
   }
 
-  //if input is anything other than rock, paper, or scissors, user will be prompted to input the correct input
+  //if input is anything other than "rock" "paper" "scissors" "user will be prompted to input the correct input
   while (
-    playerSelection != 'rock' &&
-    playerSelection != 'paper' &&
-    playerSelection != 'scissors'
+    playerSelection !== 'rock' &&
+    playerSelection !== 'paper' &&
+    playerSelection !== 'scissors'
   ) {
-    playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
+    playerSelection = prompt('Invalid input. Enter Rock, Paper, or Scissors: ');
   }
-  return playerSelection; //user's input
+  return playerSelection;
 }
 
 //Decides the winner of each round. Function called in game()
