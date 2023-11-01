@@ -13,10 +13,10 @@ function playersPlay() {
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
 
   if (playerSelection === null) {
-    // User clicked "Cancel" or pressed "Esc"
+    // Player clicked "Cancel" 
     return alert("You canceled the input.");
 } else {
-    // player input lower cased
+    // player input lowercased
     playerSelection == playerSelection.toLowerCase();
 }
     
@@ -28,7 +28,7 @@ function playersPlay() {
     ){
       playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
     }
-  return playerSelection;
+  return playerSelection;//user's input
 }
 
 //Decides the winner of each round. Function called in game()
