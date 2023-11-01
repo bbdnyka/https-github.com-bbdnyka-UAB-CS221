@@ -14,7 +14,8 @@ function playersPlay() {
 
   if (playerSelection === null) {
     // Player clicked "Cancel" . If more than 1 round played, have to cancel for each round
-    return alert("You canceled the input.");
+    alert("You canceled the input.");
+    return playerSelection;
 } else {
     // player input lowercased
     playerSelection == playerSelection.toLowerCase();
@@ -54,9 +55,10 @@ function game() {
   let playerScore = 0;
   let computerScore = 0;
 
-  for (let i = 0; i < 3; i++) {
-    // for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
-
+  for (let i = 0; i < 1; i++) {// for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
+if(playersPlay() === null){
+  break;
+}
     const playerSelection = playersPlay(); //calls function to get players answer
     const computerSelection = computerPlay(); //variable holds random element chosen from computerPlayer()
 
