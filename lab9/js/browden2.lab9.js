@@ -11,15 +11,15 @@ function computerPlay() {
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter rock, paper, or scissors: ');
-  playerSelection == playerSelection.toLowerCase();
-  /*if (playerSelection === null) {
+ // playerSelection = playerSelection.toLowerCase();
+  if (playerSelection === null) {
     // Player clicked "Cancel." Have to click "Cancel" for each round.
     alert('Player canceled their input.');
     return playerSelection;
   } else {
     // player input lowercased
-    playerSelection == playerSelection.toLowerCase();
-  }*/
+    playerSelection = playerSelection.toLowerCase();
+  }
 
   //if input is anything other than "rock" "paper" "scissors" "user will be prompted to input the correct input
   while (
