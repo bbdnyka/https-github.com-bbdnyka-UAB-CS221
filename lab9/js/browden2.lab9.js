@@ -10,7 +10,7 @@ function computerPlay() {
 //Error handling for player input
 function playersPlay() {
   //player enters choice here
-  let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
+  let playerSelection = prompt('Enter rock, paper, or scissors: ');
 
   if (playerSelection === null) {
     // Player clicked "Cancel." Have to click "Cancel" for each round.
@@ -27,8 +27,8 @@ function playersPlay() {
     playerSelection != 'paper' &&
     playerSelection != 'scissors'
   ) {
-    alert('Invalid input. Only accept "rock," "paper," or "Scissors." ')
-    playerSelection;
+    alert('Invalid input. Only accept "rock," "paper," or "Scissors." ');
+    playerSelection = prompt('Enter rock, paper, or scissors:');
   }
   return playerSelection;
 }
