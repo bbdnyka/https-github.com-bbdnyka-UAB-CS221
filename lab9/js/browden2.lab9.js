@@ -12,7 +12,7 @@ function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
 
-  if (userInput === null) {
+  if (playerSelection === null) {
     // User clicked "Cancel" or pressed "Esc"
     alert("You canceled the input.");
 } else {
