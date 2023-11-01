@@ -12,7 +12,7 @@ function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
 
-  
+  playerSelection = playerSelection.toLowerCase();
 
   while(playerSelection == null || 
     playerSelection == ""||
@@ -23,7 +23,7 @@ function playersPlay() {
     console.log("invalid input");
     console.log(playerSelection);
   }
-  playerSelection = playerSelection.toLowerCase();
+  return playerSelection;
 }
 
 //Decides the winner of each round. Function called in game()
