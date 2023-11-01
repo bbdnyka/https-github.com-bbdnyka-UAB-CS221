@@ -13,7 +13,7 @@ function playersPlay() {
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
 
   if (playerSelection === null) {
-    // Player clicked "Cancel" 
+    // Player clicked "Cancel" . If more than 1 round played, have to cancel for each round
     return alert("You canceled the input.");
 } else {
     // player input lowercased
@@ -54,7 +54,7 @@ function game() {
   let playerScore = 0;
   let computerScore = 0;
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 3; i++) {
     // for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
 
     const playerSelection = playersPlay(); //calls function to get players answer
