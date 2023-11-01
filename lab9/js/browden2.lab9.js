@@ -8,6 +8,9 @@ function computerPlay(){
   const random = Math.floor(Math.random()*computerOpt.length);
   return(random, computerOpt[random]);
 }
+function playersPlay(){
+
+}
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
