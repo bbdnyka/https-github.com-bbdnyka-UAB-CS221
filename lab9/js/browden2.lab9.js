@@ -11,10 +11,15 @@ function computerPlay() {
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
-  if(playerSelection != 'Cancel' &&  playerSelection != 'Ok'){
+
+  if (userInput === null) {
+    // User clicked "Cancel" or pressed "Esc"
+    alert("You canceled the input.");
+} else {
+    // User entered some input
     playerSelection == playerSelection.toLowerCase();
-  }
-  
+}
+    
 
   while(
     playerSelection != 'rock' &&
