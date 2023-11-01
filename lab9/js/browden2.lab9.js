@@ -11,8 +11,10 @@ function computerPlay() {
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
-  //console.log(playerSelection);
-  playerSelection = playerSelection.toLowerCase();
+  if(playerSelection != 'Cancel' &&  playerSelection != 'Ok'){
+    playerSelection == playerSelection.toLowerCase();
+  }
+  
 
   while(
     playerSelection != 'rock' &&
