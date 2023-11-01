@@ -13,8 +13,8 @@ function playersPlay() {
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
 
   if (playerSelection === null) {
-    // Player clicked "Cancel" .
-    alert('Player canceled the game.');
+    // Player clicked "Cancel." Have to click "Cancel" for each round.
+    alert('Player canceled their input.');
     return playerSelection;
   } else {
     // player input lowercased
