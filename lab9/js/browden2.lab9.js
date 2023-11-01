@@ -10,8 +10,10 @@ function computerPlay() {
 //Error handling for player input
 function playersPlay() {
   //player enters choice here
-  let playerSelection = prompt('Enter rock, paper, or scissors: ');
- 
+  let playerSelection = prompt(
+    'Score will be calculated after all 3 rounds! Enter rock, paper, or scissors: '
+  );
+
   if (playerSelection === null) {
     // Player clicked "Cancel." Have to click "Cancel" for each round.
     alert('Player canceled their input.');
@@ -36,7 +38,7 @@ function playersPlay() {
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
   //statement for deciding winner of each round
-  
+
   if (playerSelection === computerSelection) {
     return "It's a tie!";
   } else if (
