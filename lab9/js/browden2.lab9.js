@@ -11,20 +11,24 @@ function computerPlay() {
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
+  //console.log(playerSelection);
+  playerSelection = playerSelection.toLowerCase();
 
-  while(playerSelection == null ||
-    playerSelection == '' ||
-    playerSelection !== 'rock' &&
-    playerSelection !== 'paper' &&
-    playerSelection !== 'scissors'
-    )
- 
+  while(/*playerSelection == null ||
+    playerSelection == '' ||*/
+    playerSelection != 'rock' &&
+    playerSelection != 'paper' &&
+    playerSelection != 'scissors'
+    ){
+      playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
+    }
+  //playerSelection = 'poop';
   return playerSelection;
 }
 
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
-  playerSelection = playerSelection.toLowerCase();
+  
 
   //statement for deciding winner of each round
   if (playerSelection === computerSelection) {
