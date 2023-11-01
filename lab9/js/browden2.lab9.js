@@ -14,28 +14,26 @@ function playersPlay() {
 
   if (playerSelection === null) {
     // Player clicked "Cancel" . If more than 1 round played, have to cancel for each round
-    alert("You canceled the input.");
+    alert('You canceled the input.');
     return playerSelection;
-} else {
+  } else {
     // player input lowercased
     playerSelection == playerSelection.toLowerCase();
-}
-    
-//if input is anything other than rock, paper, or scissors, user will be prompted to input the correct input
-  while(
+  }
+
+  //if input is anything other than rock, paper, or scissors, user will be prompted to input the correct input
+  while (
     playerSelection != 'rock' &&
     playerSelection != 'paper' &&
     playerSelection != 'scissors'
-    ){
-      playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
-    }
-  return playerSelection;//user's input
+  ) {
+    playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
+  }
+  return playerSelection; //user's input
 }
 
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
-  
-
   //statement for deciding winner of each round
   if (playerSelection === computerSelection) {
     return "It's a tie!";
@@ -55,10 +53,13 @@ function game() {
   let playerScore = 0;
   let computerScore = 0;
 
-  for (let i = 0; i < 1; i++) {// for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
-if(playersPlay() === null){
-  break;
-}
+  for (let i = 0; i < 1; i++) {
+    // for loop manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
+
+    //game ends if players clicks "Cancel"
+    if (playersPlay() === null) {
+      return console.log('Player ended game.');
+    }
     const playerSelection = playersPlay(); //calls function to get players answer
     const computerSelection = computerPlay(); //variable holds random element chosen from computerPlayer()
 
