@@ -11,7 +11,7 @@ function computerPlay() {
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter rock, paper, or scissors: ');
- // playerSelection = playerSelection.toLowerCase();
+ 
   if (playerSelection === null) {
     // Player clicked "Cancel." Have to click "Cancel" for each round.
     alert('Player canceled their input.');
