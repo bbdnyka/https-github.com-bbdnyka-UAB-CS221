@@ -21,6 +21,7 @@ function playersPlay() {
     playerSelection != 'scissors'){
 
     console.log("invalid input");
+    console.log(playerSelection);
   }
   playerSelection = playerSelection.toLowerCase();
 }
