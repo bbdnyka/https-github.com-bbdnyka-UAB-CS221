@@ -14,15 +14,16 @@ function playersPlay() {
   //console.log(playerSelection);
   playerSelection = playerSelection.toLowerCase();
 
-  while(/*playerSelection == null ||
-    playerSelection == '' ||*/
+  while(
     playerSelection != 'rock' &&
     playerSelection != 'paper' &&
     playerSelection != 'scissors'
     ){
+      if(playerSelection == 'Cancel'){
+        break;
+      }
       playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
     }
-  //playerSelection = 'poop';
   return playerSelection;
 }
 
