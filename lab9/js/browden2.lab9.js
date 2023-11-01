@@ -11,14 +11,14 @@ function computerPlay() {
 function playersPlay() {
   //player enters choice here
   let playerSelection = prompt('Enter Rock, Paper, or Scissors: ');
-  let selection = playerSelection.toLowerCase();
+  
 
-  return selection;
+  return playerSelection;
 }
 
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
-  playerSelection = playersPlay();
+  playerSelection = playersPlay().toLowerCase();
 
   //statement for deciding winner of each round
   if (playerSelection === computerSelection) {
