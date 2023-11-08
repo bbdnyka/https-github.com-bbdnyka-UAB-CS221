@@ -56,8 +56,10 @@ function game() {
   //variables increment based on decided winner of each round
   let playerScore = 0;
   let computerScore = 0;
+  let roundCount = 0;
 
   for (let i = 0; i < 3; i++) {
+    roundCount += 1;
     //Manages how many rounds each game has. Choices a taken in succession(one after the other) and scores are calculated at the end
 
     const playerSelection = playersPlay(); //calls function to get players answer
