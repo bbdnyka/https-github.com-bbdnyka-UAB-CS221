@@ -1,19 +1,28 @@
 //Deciding a winner : scissors beats paper, rock beats scissors, paper beats rock
 //Reload browser to play again
 
+let roundCount = 0;//lets player know what round they are on.
+
 //Chooses a random play for computer
 function computerPlay() {
   const computerOpt = ['rock', 'paper', 'scissors'];
   const random = Math.floor(Math.random() * computerOpt.length);
   return random, computerOpt[random];
 }
+
 //Error handling for player input
 function playersPlay() {
+
   //player enters choice here
   let playerSelection = prompt(
-    'Score will be calculated after all 3 rounds! Enter rock, paper, or scissors: '
-  );
 
+    'Score will be calculated after all 3 rounds!\n' +
+      "You're on round: " +
+      roundCount
+       + "\n" +
+      'Enter rock, paper, or scissors: '
+  );
+  
   if (playerSelection === null) {
     // Player clicked "Cancel." Have to click "Cancel" for each round.
     alert('Player canceled their input.');
@@ -38,7 +47,7 @@ function playersPlay() {
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
   //statement for deciding winner of each round
-
+  
   if (playerSelection === computerSelection) {
     return "It's a tie!";
   } else if (
@@ -56,7 +65,7 @@ function game() {
   //variables increment based on decided winner of each round
   let playerScore = 0;
   let computerScore = 0;
-  let roundCount = 0;
+  
 
   for (let i = 0; i < 3; i++) {
     roundCount += 1;
