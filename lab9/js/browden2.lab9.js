@@ -9,13 +9,10 @@ function computerPlay() {
   const random = Math.floor(Math.random() * computerOpt.length);
   return random, computerOpt[random];
 }
-
+!
 //Error handling for player input
-function playersPlay() {
-
-  //player enters choice here
+function playersPlay() {//player enters choice here
   let playerSelection = prompt(
-
     'Score will be calculated after all 3 rounds!\n' +
       "You're on round: " +
       roundCount
@@ -23,17 +20,14 @@ function playersPlay() {
       'Enter rock, paper, or scissors: '
   );
   
-  if (playerSelection === null) {
-    // Player clicked "Cancel." Have to click "Cancel" for each round.
+  if (playerSelection === null) {// Player clicked "Cancel." Have to click "Cancel" for each round.
     alert('Player canceled their input.');
     return playerSelection;
   } else {
     // player input lowercased
     playerSelection = playerSelection.toLowerCase();
   }
-
-  //if input is anything other than "rock" "paper" "scissors" "user will be prompted to input the correct input
-  while (
+  while (//if input is anything other than "rock" "paper" "scissors" "user will be prompted to input the correct input
     playerSelection != 'rock' &&
     playerSelection != 'paper' &&
     playerSelection != 'scissors'
@@ -46,9 +40,7 @@ function playersPlay() {
 
 //Decides the winner of each round. Function called in game()
 function playRound(playerSelection, computerSelection) {
-  //statement for deciding winner of each round
-  
-  if (playerSelection === computerSelection) {
+  if (playerSelection === computerSelection) {//winner of round decider
     return "It's a tie!";
   } else if (
     (playerSelection === 'rock' && computerSelection === 'scissors') ||
@@ -61,7 +53,8 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-function game() {
+function game() {//main function of the game
+
   //variables increment based on decided winner of each round
   let playerScore = 0;
   let computerScore = 0;
@@ -71,9 +64,7 @@ function game() {
     roundCount += 1;//rounds counted here
     const playerSelection = playersPlay(); //calls function to get players answer
     const computerSelection = computerPlay(); //variable holds random element chosen from computerPlayer()
-
-    //increases playerScore or computerScores based on decision from playRound()
-    playRound(playerSelection, computerSelection);
+    playRound(playerSelection, computerSelection);//increases playerScore or computerScores based on decision from playRound()
 
     if (playRound(playerSelection, computerSelection).includes('win')) {
       playerScore++;
@@ -84,9 +75,7 @@ function game() {
     console.log('Player entered: ' + playerSelection);
     console.log('Computer entered: ' + computerSelection);
   }
-
-  //decides final winner based on playerScore and computerScore
-  if (playerScore > computerScore) {
+  if (playerScore > computerScore) {//decides final winner based on playerScore and computerScore
     console.log('You win the game!');
   } else if (computerScore > playerScore) {
     console.log('Computer wins the game!');
@@ -94,6 +83,5 @@ function game() {
     console.log("It's a tie game!");
   }
 }
-
 //function call for running game loop
 game();
