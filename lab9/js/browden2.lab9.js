@@ -9,7 +9,7 @@ function computerPlay() {
   const random = Math.floor(Math.random() * computerOpt.length);
   return random, computerOpt[random];
 }
-!
+
 //Error handling for player input
 function playersPlay() {//player enters choice here
   let playerSelection = prompt(
