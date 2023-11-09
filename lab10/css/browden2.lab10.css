@@ -1,11 +1,27 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: pink;
 }
-:root{/*color variables*/
-  --tri-green:#CCFF99;
-  --tri-blue:#99CCFF;
-  --tri-pink:#FF99CC;
+:root {
+  /*color variables*/
+  --tri-green: #ccff99;
+  --tri-blue: #99ccff;
+  --tri-pink: #ff99cc;
+}
+#rock {
+  padding: 10px;
+  border: 2px solid var(--tri-blue);
+  border-radius: 10px;
+}
+#paper {
+  padding: 10px;
+  border: 2px solid var(--tri-pink);
+  border-radius: 10px;
+}
+#scissors {
+  padding: 10px;
+  border: 2px solid var(--tri-green);
+  border-radius: 10px;
 }
