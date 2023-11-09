@@ -84,4 +84,4 @@ function game() {//main function of the game
   }
 }
 //function call for running game loop
-game();
+//game();
