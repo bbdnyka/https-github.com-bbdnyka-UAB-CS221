@@ -4,7 +4,7 @@
   box-sizing: border-box;
   background-color: pink;
 }
-:root{
+:root{/*color variables*/
   --tri-green:#CCFF99;
   --tri-blue:#99CCFF;
   --tri-pink:#FF99CC;
