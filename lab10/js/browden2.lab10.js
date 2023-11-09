@@ -10,6 +10,7 @@ paperButton.addEventListener("click", () => {
 })
 const scissorsButton =
 document.getElementById("scissors")
-paperButton.addEventListener("click", () => {
-  console.log("Scissors button clicked");
+scissorsButton.addEventListener("click", () => {
+  console.log("Scissor button clicked");
 })
+
