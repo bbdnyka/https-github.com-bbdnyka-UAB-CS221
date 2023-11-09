@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: pink;
+}
+:root{
+  --tri-green:#CCFF99;
+  --tri-blue:#99CCFF;
+  --tri-pink:#FF99CC;
+}
