@@ -13,16 +13,12 @@
           </script>
     </head>
     <body>
-        <!--Form for searching BookApi-->
-        <form>
-            <p>Lookup books: </p>
-            <input type="search" id="search"
-            placeholder="Enter book name: "
-            />
-            <input type="submit" id="submit"/>
-        </form>
-        <!--Book list view area-->
-        <div id="viewerCanvas" style="width: 600px; height: 500px"></div>
-        
+        <h1>Book Search</h1>
+
+        <label for="searchInput">Enter book title or author:</label>
+        <input type="text" id="searchInput">
+        <button onclick="searchBooks()">Search</button>
+    
+        <div id="results"></div>
     </body>
 </html>
