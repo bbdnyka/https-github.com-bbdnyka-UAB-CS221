@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Book Search</title>
-        <!--CSS and Javascript links-->
-        <link rel="stylesheet" href="css/browden2.lab11.css"/>
-        <script src="js/browden2.lab11.js"></script>
-        <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
-        <script type="text/javascript" src="js/browden2.lab11.js">
-            google.books.load();
-          </script>
-    </head>
-    <body>
-        <!--Input section for searching BookApi-->
-       
-        <label for="searchInput">Enter book title or author:</label>
-        <input type="text" id="searchInput">
-        <button onclick="searchBooks()">Search</button>
-    
-        <div id="results"></div>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Search</title>
+    <!--CSS and Javascript links-->
+    <link rel="stylesheet" href="css/browden2.lab11.css" />
+    <script src="js/browden2.lab11.js"></script>
+  </head>
+  <body>
+    <!--Input section for searching BookApi-->
+
+    <label for="searchInput">Enter book title or author:</label>
+    <input type="text" id="searchInput" />
+    <button onclick="searchBooks()">Search</button>
+
+    <div id="results"></div>
+  </body>
 </html>
