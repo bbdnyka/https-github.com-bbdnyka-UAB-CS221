@@ -18,8 +18,8 @@ function searchBooks() {
 }
 
 function displayResults(data) {
-    const resultsContainer = document.getElementById("results");
-    resultsContainer.innerHTML = "";
+    const resultsContainer = document.getElementById("results"); //Retrieves div from html file
+    resultsContainer.innerHTML = ""; //changes HTML contents of "result"
 
     if (data.items) {
         data.items.forEach(item => {
@@ -27,9 +27,9 @@ function displayResults(data) {
             const title = volumeInfo.title || "Unknown Title";
             const authors = volumeInfo.authors || ["Unknown Author"];
 
-            const resultDiv = document.createElement("div");
-            resultDiv.innerHTML = `<p><strong>Title:</strong> ${title}</p><p><strong>Authors:</strong> ${authors.join(", ")}</p>`;
-            resultsContainer.appendChild(resultDiv);
+            const resultDiv = document.createElement("div");//creates more div items for each title/author
+            resultDiv.innerHTML = `<p><strong>Title:</strong> ${title}</p><p><strong>Authors:</strong> ${authors.join(", ")}</p>`;//newly created div HTML content changed to title and authors items
+            resultsContainer.appendChild(resultDiv);//newly created divs pushed to resultsContainer
         });
     } else {
         resultsContainer.innerHTML = "<p>No results found.</p>";
