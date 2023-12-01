@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
+
   const taskInput = document.getElementById('taskInput');
   const taskList = document.getElementById('taskList');
   const addTaskBtn = document.getElementById('addTaskBtn');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Create a remove button for each task item
       const removeBtn = document.createElement('button');
-      removeBtn.textContent = 'Remove';
+      //removeBtn.textContent = 'Remove';
       removeBtn.addEventListener('click', function () {
         // remove associated task item
         removeTask(li);
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Create a remove button for each task item
         const removeBtn = document.createElement('button');
-        removeBtn.textContent = 'Remove';
+        //removeBtn.textContent = 'Remove';
         removeBtn.addEventListener('click', function () {
           // remove associated task item
           removeTask(taskItem);
