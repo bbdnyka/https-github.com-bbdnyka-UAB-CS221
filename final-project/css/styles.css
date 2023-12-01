@@ -15,8 +15,7 @@ body {
 }
 
 h1, h3{
-  float: left;
-  clear: left;
+  position: top;
   width: 320px;
   background-color: #fff;
   color: #5a514c;

@@ -15,6 +15,7 @@ else{
 	greeting = 'Welcome!';
 }
 document.write('<h3>' + greeting + '</h3>');
+
 document.addEventListener('DOMContentLoaded', function () {
 
   const taskInput = document.getElementById('taskInput');
