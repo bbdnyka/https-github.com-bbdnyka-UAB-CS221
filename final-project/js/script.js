@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  
   const taskInput = document.getElementById('taskInput');
   const taskList = document.getElementById('taskList');
   const addTaskBtn = document.getElementById('addTaskBtn');
@@ -70,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
           // save updated list
           saveTask();
         });
+
         // Add remove button to each task item
         taskItem.appendChild(removeBtn);
         // Add each task item to list
