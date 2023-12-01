@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const taskList = document.getElementById('taskList');
   const addTaskBtn = document.getElementById('addTaskBtn');
 
+  function removeTask(button) {}
+
   // Load task from local storage
   loadTasks();
 
@@ -16,6 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
       const li = document.createElement('li');
       li.textContent = newTask;
 
+      // Create a remove button for each task item
+      const removeBtn = document.createElement('button');
+      removeBtn.textContent = 'Remove';
+      removeBtn.addEventListener('click', function () {
+        // remove associated task item
+        removeTask(li);
+        // save updated list
+        saveTask();
+      });
+
       // Append the new task to the list
       taskList.appendChild(li);
 
@@ -26,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
       taskInput.value = '';
     }
   });
+  function removeTask(task) {
+    taskList.removeChild(task);
+  }
   function saveTask() {
     // get the current task list
     const tasks = Array.from(taskList.children).map((li) => li.textContent);
