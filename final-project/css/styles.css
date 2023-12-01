@@ -77,13 +77,13 @@ li button {
   border-radius: 4px;
   cursor: pointer;
 }
-#taskInput{
+#taskInput {
   margin: 10px;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #bcbdc0;
 }
-#addTaskBtn{
+#addTaskBtn {
   padding: 10px;
   border-radius: 4px;
   border: none;
