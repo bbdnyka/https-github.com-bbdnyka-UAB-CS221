@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         saveTask();
       });
 
+      // Button is added to each new task item
       li.appendChild(removeBtn);
       // Append the new task to the list
       taskList.appendChild(li);
