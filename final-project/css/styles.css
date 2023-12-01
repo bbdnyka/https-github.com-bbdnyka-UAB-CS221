@@ -34,18 +34,15 @@ h1, h3{
 }
 
 h1 {
-  margin: 50px 0 0 50px;
-  height: 175px;
-  background-image: url("../images/constructive-logo.gif");
-  background-repeat: no-repeat;
-  text-indent: -9999px;
+  padding: 10px;
+  justify-content: center;
   border-top: 1px solid #bcbdc0;
   border-left: 1px solid #bcbdc0;
   border-right: 1px solid #bcbdc0;}
 
 h3 {
-  margin: 0 0 0 50px;
-  padding: 25px 0 0 0;
+  justify-content: center;
+  padding: 10px;
   font-family: 'Open Sans', arial, sans-serif;
   font-size: 1.8em;
   font-style: italic;
