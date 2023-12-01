@@ -60,6 +60,19 @@ document.addEventListener('DOMContentLoaded', function () {
       tasks.forEach((element) => {
         const taskItem = document.createElement('li');
         taskItem.textContent = element;
+
+        // Create a remove button for each task item
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Remove';
+        removeBtn.addEventListener('click', function () {
+          // remove associated task item
+          removeTask(taskItem);
+          // save updated list
+          saveTask();
+        });
+        // Add remove button to each task item
+        taskItem.appendChild(removeBtn);
+        // Add each task item to list
         taskList.appendChild(taskItem);
       });
     }
