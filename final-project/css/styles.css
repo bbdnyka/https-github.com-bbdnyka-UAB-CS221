@@ -68,15 +68,17 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-
+li button{
+  font-size: medium; 
+  border: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 li button::before {
   font-family: 'Material Icons';
   content: "delete";
-  font-size: large;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 4px;
-  cursor: pointer;
+  
 }
 #taskInput {
   margin-left: 30px;
