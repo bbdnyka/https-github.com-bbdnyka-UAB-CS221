@@ -1,6 +1,8 @@
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
+document.addEventListener('DOMContentLoaded', function () {
+
+const today = new Date();
+const hourNow = today.getHours();
+let greeting = document.getElementById("greeting");
 
 if(hourNow > 18){
 	greeting = 'Good evening!';
@@ -14,9 +16,7 @@ else if(hourNow > 0){
 else{
 	greeting = 'Welcome!';
 }
-document.write('<h3>' + greeting + '</h3>');
-
-document.addEventListener('DOMContentLoaded', function () {
+//document.write('<h3>' + greeting + '</h3>');
 
   const taskInput = document.getElementById('taskInput');
   const taskList = document.getElementById('taskList');
