@@ -69,11 +69,10 @@ li {
   align-items: center;
 }
 
-li button {
+li button::before {
   font-family: 'Material Icons';
   content: "delete";
-  background-color: #ff0000;
-  color: #fff;
+  font-size: large;
   border: none;
   padding: 10px 15px;
   border-radius: 4px;
