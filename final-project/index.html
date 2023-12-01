@@ -9,7 +9,22 @@
   <body>
     <div class="container">
       <h1>Two-Do List</h1>
-      <h3 id="greeting"></h3>
+      <script>
+        const today = new Date();
+        const hourNow = today.getHours();
+        let greeting = document.getElementById('greeting');
+
+        if (hourNow > 18) {
+          greeting = 'Good evening!';
+        } else if (hourNow > 12) {
+          greeting = 'Good Afternoon!';
+        } else if (hourNow > 0) {
+          greeting = 'Good Morning!';
+        } else {
+          greeting = 'Welcome!';
+        }
+        document.write('<h3>' + greeting + '</h3>');
+      </script>
       <div id="taskContainer">
         <input type="text" id="taskInput" placeholder="Add a new task" />
         <button id="addTaskBtn">Add Task</button>
