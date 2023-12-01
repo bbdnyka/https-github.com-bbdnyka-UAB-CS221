@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         saveTask();
       });
 
+      li.appendChild(removeBtn);
       // Append the new task to the list
       taskList.appendChild(li);
 
