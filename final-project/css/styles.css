@@ -14,6 +14,15 @@ body {
   margin: 0;
 }
 
+h1, h3{
+  float: left;
+  clear: left;
+  width: 320px;
+  background-color: #fff;
+  color: #5a514c;
+  text-align: center;
+}
+
 .container {
   background-color: #fff;
   padding: 20px;
