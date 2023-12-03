@@ -98,9 +98,7 @@ li button {
   transition-duration: 0.5s;
   cursor: pointer;
 }
-/* google api font */
 #greeting{
-  font-family: 'el messiri';
   transition-duration: 0.5s;
 }
 /* google api icon */
