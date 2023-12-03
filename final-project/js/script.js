@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Save updated list to local storage
       saveTask();
-      alert('Task added!');
+      
       // Clear input field
       taskInput.value = '';
     }
@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (event.key === 'Enter') {
         // Do something when Enter key is pressed
         addTask();
-        alert('Task Added!');
       }
     });
 });
