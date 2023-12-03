@@ -109,3 +109,10 @@ li :hover {
   color: red;
   font-size: 150%;
 }
+#greeting{
+  transition-duration: 1s;
+}
+#greeting:hover{
+  font-size: 200%;
+  color: pink;
+}
