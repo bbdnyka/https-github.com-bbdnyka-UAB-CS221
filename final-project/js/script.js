@@ -35,13 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Save updated list to local storage
       saveTask();
-
+      alert('Task added!');
       // Clear input field
       taskInput.value = '';
     }
   });
   function removeTask(task) {
     taskList.removeChild(task);
+    alert('Task deleted!');
   }
   function saveTask() {
     // get the current task list
