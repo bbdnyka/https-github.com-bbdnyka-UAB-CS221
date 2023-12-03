@@ -69,10 +69,11 @@ li {
   align-items: center;
 }
 li button {
-  font-size: medium;
+  font-size: large;
   border: none;
-  padding: 5px 15px;
+  padding: 5px 20px;
   border-radius: 4px;
+  transition-duration: 1s;
   cursor: pointer;
 }
 
@@ -91,6 +92,7 @@ li button {
   font: arial, sans-serif;
   font-size: 0.8em;
   font-weight: 850;
+  transition-duration: 1s;
   cursor: pointer;
 }
 li button::before {
@@ -100,5 +102,6 @@ li button::before {
 #addTaskBtn:hover,
 li :hover {
   background-color: pink;
+  color: white;
   font-size: 150%;
 }
