@@ -67,13 +67,14 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s;
 }
 li button {
   font-size: large;
   border: none;
   padding: 5px 20px;
   border-radius: 4px;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 
@@ -83,6 +84,7 @@ li button {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 4px;
+  transition-duration: 0.2s;
   border: 1px solid #bcbdc0;
 }
 #addTaskBtn {
@@ -92,7 +94,7 @@ li button {
   font: arial, sans-serif;
   font-size: 0.8em;
   font-weight: 850;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 li button::before {
@@ -104,8 +106,11 @@ li button::before {
   color: white;
   font-size: 150%;
 }
-li :hover {
+li:hover{
   background-color: pink;
+}
+li button:hover {
+  background-color: white;
   color: red;
   font-size: 150%;
 }
@@ -115,4 +120,8 @@ li :hover {
 #greeting:hover{
   font-size: 200%;
   color: pink;
+}
+#taskInput:hover{
+  border: solid 2px pink;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
