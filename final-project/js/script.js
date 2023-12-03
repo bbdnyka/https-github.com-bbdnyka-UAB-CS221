@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-
-
   const taskInput = document.getElementById('taskInput');
   const taskList = document.getElementById('taskList');
   const addTaskBtn = document.getElementById('addTaskBtn');
@@ -81,4 +78,45 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
+  function addTask() {
+    // Get value from input field
+    const newTask = taskInput.value.trim();
+    // Check if the input is not empty
+    if (newTask !== '') {
+      // Create a new list item
+      const li = document.createElement('li');
+      li.textContent = newTask;
+
+      // Create a remove button for each task item
+      const removeBtn = document.createElement('button');
+      //removeBtn.textContent = 'Remove';
+      removeBtn.addEventListener('click', function () {
+        // remove associated task item
+        removeTask(li);
+        // save updated list
+        saveTask();
+      });
+
+      // Button is added to each new task item
+      li.appendChild(removeBtn);
+      // Append the new task to the list
+      taskList.appendChild(li);
+
+      // Save updated list to local storage
+      saveTask();
+
+      // Clear input field
+      taskInput.value = '';
+    }
+  }
+  document
+    .getElementById('taskInput')
+    .addEventListener('keypress', function (event) {
+      // Check if the key pressed is Enter (key code 13)
+      if (event.key === 'Enter') {
+        // Do something when Enter key is pressed
+        addTask();
+        alert('Task Added!');
+      }
+    });
 });
