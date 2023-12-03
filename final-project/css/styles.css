@@ -99,9 +99,13 @@ li button::before {
   font-family: 'Material Icons';
   content: 'delete';
 }
-#addTaskBtn:hover,
-li :hover {
+#addTaskBtn:hover{
   background-color: pink;
   color: white;
+  font-size: 150%;
+}
+li :hover {
+  background-color: pink;
+  color: red;
   font-size: 150%;
 }
