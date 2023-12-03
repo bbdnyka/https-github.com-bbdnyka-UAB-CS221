@@ -97,6 +97,12 @@ li button {
   transition-duration: 0.5s;
   cursor: pointer;
 }
+/* google api font */
+#greeting{
+  font-family: 'el messiri';
+  transition-duration: 0.5s;
+}
+/* google api icon */
 li button::before {
   font-family: 'Material Icons';
   content: 'delete';
@@ -115,14 +121,11 @@ li button:hover {
   color: red;
   font-size: 150%;
 }
-#greeting{
-  transition-duration: 1s;
-}
 #greeting:hover{
   font-size: 200%;
   color: pink;
 }
 #taskInput:hover{
   border: solid 2px pink;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px pink;
 }
