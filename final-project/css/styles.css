@@ -98,7 +98,7 @@ li button {
   transition-duration: 0.5s;
   cursor: pointer;
 }
-#greeting{
+#greeting {
   transition-duration: 0.5s;
 }
 /* google api icon */
@@ -106,25 +106,23 @@ li button::before {
   font-family: 'Material Icons';
   content: 'delete';
 }
-#addTaskBtn:hover{
+#addTaskBtn:hover {
   background-color: pink;
   color: white;
-  font-size: 150%;
 }
-li:hover{
+li:hover {
   background-color: pink;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 li button:hover {
   background-color: white;
   color: red;
-  font-size: 150%;
 }
-#greeting:hover{
-  font-size: 200%;
+#greeting:hover {
+  font-size: 150%;
   color: pink;
 }
-#taskInput:hover{
+#taskInput:hover {
   border: solid 2px pink;
   box-shadow: 0 0 10px pink;
 }
