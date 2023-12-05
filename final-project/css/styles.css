@@ -119,7 +119,6 @@ li button:hover {
   color: red;
 }
 #greeting:hover {
-  font-size: 150%;
   color: pink;
 }
 #taskInput:hover {
